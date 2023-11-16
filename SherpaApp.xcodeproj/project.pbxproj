@@ -14,6 +14,10 @@
 		25B368872B06CD92004B48EA /* SherpaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368862B06CD92004B48EA /* SherpaAppTests.swift */; };
 		25B368912B06CD92004B48EA /* SherpaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368902B06CD92004B48EA /* SherpaAppUITests.swift */; };
 		25B368932B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368922B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift */; };
+		25DC1E6D2B06DDF1003766D1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC1E6C2B06DDF1003766D1 /* MapView.swift */; };
+		25DC1E6F2B06DEBE003766D1 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC1E6E2B06DEBE003766D1 /* PeopleView.swift */; };
+		25DC1E732B06DEED003766D1 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC1E722B06DEED003766D1 /* SavedView.swift */; };
+		25DC1E752B06DEF5003766D1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC1E742B06DEF5003766D1 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		25B3688C2B06CD92004B48EA /* SherpaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherpaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B368902B06CD92004B48EA /* SherpaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppUITests.swift; sourceTree = "<group>"; };
 		25B368922B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25DC1E6C2B06DDF1003766D1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		25DC1E6E2B06DEBE003766D1 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
+		25DC1E722B06DEED003766D1 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		25DC1E742B06DEF5003766D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,12 @@
 		25B368742B06CD90004B48EA /* SherpaApp */ = {
 			isa = PBXGroup;
 			children = (
-				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				25B368772B06CD90004B48EA /* ContentView.swift */,
+				25DC1E742B06DEF5003766D1 /* ProfileView.swift */,
+				25DC1E722B06DEED003766D1 /* SavedView.swift */,
+				25DC1E6E2B06DEBE003766D1 /* PeopleView.swift */,
+				25DC1E6C2B06DDF1003766D1 /* MapView.swift */,
+				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				25B368792B06CD92004B48EA /* Assets.xcassets */,
 				25B3687B2B06CD92004B48EA /* Preview Content */,
 			);
@@ -258,7 +270,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B368782B06CD90004B48EA /* ContentView.swift in Sources */,
+				25DC1E732B06DEED003766D1 /* SavedView.swift in Sources */,
+				25DC1E6D2B06DDF1003766D1 /* MapView.swift in Sources */,
 				25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */,
+				25DC1E752B06DEF5003766D1 /* ProfileView.swift in Sources */,
+				25DC1E6F2B06DEBE003766D1 /* PeopleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

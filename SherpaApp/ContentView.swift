@@ -1,24 +1,30 @@
-//
-//  ContentView.swift
-//  SherpaApp
-//
-//  Created by Marell Bito on 17/11/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            MapView()
+                .tabItem {
+                    Label("Map", systemImage: "person")
+                }
+            PeopleView()
+                .tabItem {
+                    Label("People", systemImage: "book")
+                }
+            SavedView()
+                .tabItem {
+                    Label("Saved", systemImage: "star")
+                }
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "hand.thumbsup")
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
