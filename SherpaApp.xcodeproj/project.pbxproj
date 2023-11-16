@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368752B06CD90004B48EA /* SherpaAppApp.swift */; };
+		25B368782B06CD90004B48EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368772B06CD90004B48EA /* ContentView.swift */; };
+		25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B368792B06CD92004B48EA /* Assets.xcassets */; };
+		25B3687D2B06CD92004B48EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B3687C2B06CD92004B48EA /* Preview Assets.xcassets */; };
+		25B368872B06CD92004B48EA /* SherpaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368862B06CD92004B48EA /* SherpaAppTests.swift */; };
+		25B368912B06CD92004B48EA /* SherpaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368902B06CD92004B48EA /* SherpaAppUITests.swift */; };
+		25B368932B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368922B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25B368832B06CD92004B48EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B3686A2B06CD90004B48EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B368712B06CD90004B48EA;
+			remoteInfo = SherpaApp;
+		};
+		25B3688D2B06CD92004B48EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B3686A2B06CD90004B48EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B368712B06CD90004B48EA;
+			remoteInfo = SherpaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25B368722B06CD90004B48EA /* SherpaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherpaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B368752B06CD90004B48EA /* SherpaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppApp.swift; sourceTree = "<group>"; };
+		25B368772B06CD90004B48EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25B368792B06CD92004B48EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25B3687C2B06CD92004B48EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25B368822B06CD92004B48EA /* SherpaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherpaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B368862B06CD92004B48EA /* SherpaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppTests.swift; sourceTree = "<group>"; };
+		25B3688C2B06CD92004B48EA /* SherpaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherpaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B368902B06CD92004B48EA /* SherpaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppUITests.swift; sourceTree = "<group>"; };
+		25B368922B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B3686F2B06CD90004B48EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B3687F2B06CD92004B48EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B368892B06CD92004B48EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B368692B06CD90004B48EA = {
+			isa = PBXGroup;
+			children = (
+				25B368742B06CD90004B48EA /* SherpaApp */,
+				25B368852B06CD92004B48EA /* SherpaAppTests */,
+				25B3688F2B06CD92004B48EA /* SherpaAppUITests */,
+				25B368732B06CD90004B48EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25B368732B06CD90004B48EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25B368722B06CD90004B48EA /* SherpaApp.app */,
+				25B368822B06CD92004B48EA /* SherpaAppTests.xctest */,
+				25B3688C2B06CD92004B48EA /* SherpaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25B368742B06CD90004B48EA /* SherpaApp */ = {
+			isa = PBXGroup;
+			children = (
+				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
+				25B368772B06CD90004B48EA /* ContentView.swift */,
+				25B368792B06CD92004B48EA /* Assets.xcassets */,
+				25B3687B2B06CD92004B48EA /* Preview Content */,
+			);
+			path = SherpaApp;
+			sourceTree = "<group>";
+		};
+		25B3687B2B06CD92004B48EA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				25B3687C2B06CD92004B48EA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25B368852B06CD92004B48EA /* SherpaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				25B368862B06CD92004B48EA /* SherpaAppTests.swift */,
+			);
+			path = SherpaAppTests;
+			sourceTree = "<group>";
+		};
+		25B3688F2B06CD92004B48EA /* SherpaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25B368902B06CD92004B48EA /* SherpaAppUITests.swift */,
+				25B368922B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift */,
+			);
+			path = SherpaAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25B368712B06CD90004B48EA /* SherpaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B368962B06CD92004B48EA /* Build configuration list for PBXNativeTarget "SherpaApp" */;
+			buildPhases = (
+				25B3686E2B06CD90004B48EA /* Sources */,
+				25B3686F2B06CD90004B48EA /* Frameworks */,
+				25B368702B06CD90004B48EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SherpaApp;
+			productName = SherpaApp;
+			productReference = 25B368722B06CD90004B48EA /* SherpaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25B368812B06CD92004B48EA /* SherpaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B368992B06CD92004B48EA /* Build configuration list for PBXNativeTarget "SherpaAppTests" */;
+			buildPhases = (
+				25B3687E2B06CD92004B48EA /* Sources */,
+				25B3687F2B06CD92004B48EA /* Frameworks */,
+				25B368802B06CD92004B48EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B368842B06CD92004B48EA /* PBXTargetDependency */,
+			);
+			name = SherpaAppTests;
+			productName = SherpaAppTests;
+			productReference = 25B368822B06CD92004B48EA /* SherpaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25B3688B2B06CD92004B48EA /* SherpaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B3689C2B06CD92004B48EA /* Build configuration list for PBXNativeTarget "SherpaAppUITests" */;
+			buildPhases = (
+				25B368882B06CD92004B48EA /* Sources */,
+				25B368892B06CD92004B48EA /* Frameworks */,
+				25B3688A2B06CD92004B48EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B3688E2B06CD92004B48EA /* PBXTargetDependency */,
+			);
+			name = SherpaAppUITests;
+			productName = SherpaAppUITests;
+			productReference = 25B3688C2B06CD92004B48EA /* SherpaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25B3686A2B06CD90004B48EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					25B368712B06CD90004B48EA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					25B368812B06CD92004B48EA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 25B368712B06CD90004B48EA;
+					};
+					25B3688B2B06CD92004B48EA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 25B368712B06CD90004B48EA;
+					};
+				};
+			};
+			buildConfigurationList = 25B3686D2B06CD90004B48EA /* Build configuration list for PBXProject "SherpaApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25B368692B06CD90004B48EA;
+			productRefGroup = 25B368732B06CD90004B48EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25B368712B06CD90004B48EA /* SherpaApp */,
+				25B368812B06CD92004B48EA /* SherpaAppTests */,
+				25B3688B2B06CD92004B48EA /* SherpaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25B368702B06CD90004B48EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B3687D2B06CD92004B48EA /* Preview Assets.xcassets in Resources */,
+				25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B368802B06CD92004B48EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B3688A2B06CD92004B48EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25B3686E2B06CD90004B48EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B368782B06CD90004B48EA /* ContentView.swift in Sources */,
+				25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B3687E2B06CD92004B48EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B368872B06CD92004B48EA /* SherpaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B368882B06CD92004B48EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B368912B06CD92004B48EA /* SherpaAppUITests.swift in Sources */,
+				25B368932B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25B368842B06CD92004B48EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B368712B06CD90004B48EA /* SherpaApp */;
+			targetProxy = 25B368832B06CD92004B48EA /* PBXContainerItemProxy */;
+		};
+		25B3688E2B06CD92004B48EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B368712B06CD90004B48EA /* SherpaApp */;
+			targetProxy = 25B3688D2B06CD92004B48EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25B368942B06CD92004B48EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25B368952B06CD92004B48EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25B368972B06CD92004B48EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SherpaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.uts.SherpaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		25B368982B06CD92004B48EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SherpaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.uts.SherpaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		25B3689A2B06CD92004B48EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.uts.SherpaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SherpaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SherpaApp";
+			};
+			name = Debug;
+		};
+		25B3689B2B06CD92004B48EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.uts.SherpaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SherpaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SherpaApp";
+			};
+			name = Release;
+		};
+		25B3689D2B06CD92004B48EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.uts.SherpaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SherpaApp;
+			};
+			name = Debug;
+		};
+		25B3689E2B06CD92004B48EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = au.edu.uts.SherpaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SherpaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25B3686D2B06CD90004B48EA /* Build configuration list for PBXProject "SherpaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B368942B06CD92004B48EA /* Debug */,
+				25B368952B06CD92004B48EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B368962B06CD92004B48EA /* Build configuration list for PBXNativeTarget "SherpaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B368972B06CD92004B48EA /* Debug */,
+				25B368982B06CD92004B48EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B368992B06CD92004B48EA /* Build configuration list for PBXNativeTarget "SherpaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B3689A2B06CD92004B48EA /* Debug */,
+				25B3689B2B06CD92004B48EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B3689C2B06CD92004B48EA /* Build configuration list for PBXNativeTarget "SherpaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B3689D2B06CD92004B48EA /* Debug */,
+				25B3689E2B06CD92004B48EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25B3686A2B06CD90004B48EA /* Project object */;
+}
