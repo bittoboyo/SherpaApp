@@ -9,7 +9,6 @@ struct PeopleView: View {
                 .padding()
             
             Text("People")
-                .font(.custom(FontNames.helvetica, size: 40).bold())
         }
         .padding()
     }

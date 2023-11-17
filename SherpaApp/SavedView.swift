@@ -9,7 +9,6 @@ struct SavedView: View {
                 .padding()
             
             Text("Saved")
-                .font(.custom(FontNames.helvetica, size: 40).bold())
         }
         .padding()
     }

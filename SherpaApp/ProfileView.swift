@@ -9,7 +9,6 @@ struct ProfileView: View {
                 .padding()
             
             Text("Profile")
-                .font(.custom(FontNames.helvetica, size: 40).bold())
         }
         .padding()
     }
