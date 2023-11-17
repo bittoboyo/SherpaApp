@@ -8,10 +8,11 @@ struct MapView: View {
     
     var body: some View {
         Map(coordinateRegion: $manager.region, showsUserLocation: true)
+            .frame(height: 765)
             .edgesIgnoringSafeArea(.all)
             .mapControls {
                 MapUserLocationButton()
-            }
+        }
     }
 }
 
