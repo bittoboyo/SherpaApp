@@ -1,17 +1,18 @@
-import SwiftUI
 import MapKit
+import SwiftUI
 
 struct MapView: View {
+    
+    @StateObject var manager = LocationManager()
+    @Namespace var mapScope
+    
     var body: some View {
-        Map(initialPosition: .region(region))
+        Map(coordinateRegion: $manager.region, showsUserLocation: true)
+            .edgesIgnoringSafeArea(.all)
+            .mapControls {
+                MapUserLocationButton()
+            }
     }
-}
-
-private var region: MKCoordinateRegion {
-    MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868),
-        span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-    )
 }
 
 struct MapView_Previews: PreviewProvider {
