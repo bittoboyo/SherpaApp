@@ -17,6 +17,5 @@ private var region: MKCoordinateRegion {
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
-        //bada bing bada boom!!
     }
 }
