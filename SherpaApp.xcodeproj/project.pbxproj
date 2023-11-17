@@ -104,9 +104,9 @@
 			children = (
 				25B368772B06CD90004B48EA /* ContentView.swift */,
 				25DC1E742B06DEF5003766D1 /* ProfileView.swift */,
-				25DC1E722B06DEED003766D1 /* SavedView.swift */,
 				25DC1E6E2B06DEBE003766D1 /* PeopleView.swift */,
 				25DC1E6C2B06DDF1003766D1 /* MapView.swift */,
+				25DC1E722B06DEED003766D1 /* SavedView.swift */,
 				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				25B368792B06CD92004B48EA /* Assets.xcassets */,
 				25B3687B2B06CD92004B48EA /* Preview Content */,
