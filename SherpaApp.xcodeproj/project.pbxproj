@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4B2B0709EB0095E16B /* Users.swift */; };
+		13AB1D4E2B070A400095E16B /* RowUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4D2B070A400095E16B /* RowUser.swift */; };
 		25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368752B06CD90004B48EA /* SherpaAppApp.swift */; };
 		25B368782B06CD90004B48EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368772B06CD90004B48EA /* ContentView.swift */; };
 		25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B368792B06CD92004B48EA /* Assets.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13AB1D4B2B0709EB0095E16B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		13AB1D4D2B070A400095E16B /* RowUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowUser.swift; sourceTree = "<group>"; };
 		25B368722B06CD90004B48EA /* SherpaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherpaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B368752B06CD90004B48EA /* SherpaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppApp.swift; sourceTree = "<group>"; };
 		25B368772B06CD90004B48EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				25B368792B06CD92004B48EA /* Assets.xcassets */,
 				25B3687B2B06CD92004B48EA /* Preview Content */,
+				13AB1D4B2B0709EB0095E16B /* Users.swift */,
+				13AB1D4D2B070A400095E16B /* RowUser.swift */,
 			);
 			path = SherpaApp;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */,
 				25DC1E752B06DEF5003766D1 /* ProfileView.swift in Sources */,
 				25DC1E6F2B06DEBE003766D1 /* PeopleView.swift in Sources */,
+				13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */,
+				13AB1D4E2B070A400095E16B /* RowUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
