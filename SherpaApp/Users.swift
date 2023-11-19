@@ -7,9 +7,9 @@
 
 import Foundation
 struct Users: Hashable, Codable {
-    var id: Int
     var name: String
-    var park: String
-    var state: String
+    var industry: String
+    var skills: String
+    var occupation: String
     var description: String
 }
