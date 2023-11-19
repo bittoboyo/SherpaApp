@@ -6,19 +6,15 @@ struct ContentView: View {
             TabView {
                 MapView()
                     .tabItem {
-                        Label("Map", systemImage: "person")
-                    }
-                PeopleView()
-                    .tabItem {
-                        Label("People", systemImage: "book")
+                        Label("Explore", systemImage: "map")
                     }
                 SavedView()
                     .tabItem {
-                        Label("Saved", systemImage: "star")
+                        Label("Saved", systemImage: "bookmark")
                     }
                 ProfileView()
                     .tabItem {
-                        Label("Profile", systemImage: "hand.thumbsup")
+                        Label("Profile", systemImage: "person.crop.circle.fill")
                 }
             }
         }
