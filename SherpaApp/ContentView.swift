@@ -2,22 +2,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            MapView()
-                .tabItem {
-                    Label("Map", systemImage: "person")
+        ZStack {
+            TabView {
+                MapView()
+                    .tabItem {
+                        Label("Explore", systemImage: "map")
+                    }
+                SavedView()
+                    .tabItem {
+                        Label("Saved", systemImage: "bookmark")
+                    }
+                ProfileView()
+                    .tabItem {
+                        Label("Profile", systemImage: "person.crop.circle.fill")
                 }
-            PeopleView()
-                .tabItem {
-                    Label("People", systemImage: "book")
-                }
-            SavedView()
-                .tabItem {
-                    Label("Saved", systemImage: "star")
-                }
-            ProfileView()
-                .tabItem {
-                    Label("Profile", systemImage: "hand.thumbsup")
             }
         }
     }
