@@ -15,14 +15,14 @@ struct MapView: View {
                 .mapControls {
                     MapUserLocationButton()
                 }
-                    if checkInList == true{
-                        VStack{
-                            Spacer()
-                            RoundedRectangle(cornerRadius: 15)
-                                .foregroundColor(.white)
-                                .frame(width: .infinity, height: 500, alignment: .bottom)
-                        }
-                    }
+            if checkInList == true{
+                VStack{
+                    Spacer()
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(.white)
+                        .frame(width: .infinity, height: 500, alignment: .bottom)
+                }
+            }
         }
     }
 }
