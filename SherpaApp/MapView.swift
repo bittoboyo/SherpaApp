@@ -5,6 +5,8 @@ struct MapView: View {
     
     @StateObject var manager = LocationManager()
     
+    @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
+    
     @State var checkInList = false
     private let rectangleHeight: CGFloat = 852
     private let rectangleWidth: CGFloat = 393
@@ -15,17 +17,25 @@ struct MapView: View {
     
     var body: some View {
         ZStack{
-            Map {
-                Marker("Alpaca Cafe",
-                   systemImage: "cup.and.saucer.fill",
-                   coordinate: .alpacaCafe)
+            Map(position: $position) {
+                Annotation("Alpaca Cafe", coordinate: .alpacaCafe) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(.blue)
+                        Text("☕️")
+                            .padding(5)
+                    }
+                }
             }
             .mapControls {
                 MapUserLocationButton()
             }
-            .mapStyle(.standard(elevation: .flat,
-            pointsOfInterest: .excludingAll,
-            showsTraffic: false))
+            .mapStyle(.standard(
+                pointsOfInterest: .excludingAll,
+                showsTraffic: false))
+            .onAppear {
+                CLLocationManager().requestWhenInUseAuthorization()
+            }
             
             if checkInList == true{
             //overlay screen for check-in member list
@@ -44,7 +54,6 @@ struct MapView: View {
                         .gesture(dragGesture)
                         .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
                 }
-
             }
         }
     }
@@ -73,5 +82,13 @@ struct MapView_Previews: PreviewProvider {
 }
 
 extension CLLocationCoordinate2D {
-  static let alpacaCafe = CLLocationCoordinate2D(latitude: 37.337349, longitude: -122.014681)
+  static let alpacaCafe = CLLocationCoordinate2D(latitude: -33.88439209095589, longitude: 151.2010453846179)
+}
+
+extension MKCoordinateRegion {
+    static let test = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(
+            latitude: 42.360256, longitude: -71.057279),
+        span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    )
 }
