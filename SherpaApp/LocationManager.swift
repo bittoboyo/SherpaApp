@@ -29,7 +29,11 @@ final class LocationManager: NSObject, ObservableObject {
             break
         }
     }
-}
+    
+    func getUserCurrentLocation() -> CLLocationCoordinate2D? {
+        return locationManager.location?.coordinate
+    }
+ }
 
 extension LocationManager: CLLocationManagerDelegate {
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
