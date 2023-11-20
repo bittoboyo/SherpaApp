@@ -27,7 +27,9 @@ struct MapView: View {
             pointsOfInterest: .excludingAll,
             showsTraffic: false))
             
-            Button("Marker Mockup") {
+            let viewToAnimate = UIView()
+            
+            Button("Mockup button") {
                 checkInList = true
             }
             .background(.white)
@@ -35,6 +37,7 @@ struct MapView: View {
 
             if checkInList == true{
             //overlay screen for check-in member list
+                
                 ZStack{
                     RoundedRectangle(cornerRadius: 20)
                         .foregroundColor(.white)
@@ -50,7 +53,7 @@ struct MapView: View {
                         .gesture(dragGesture)
                         .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
                 }
-
+                .transition(.move(edge: .bottom))
             }
         }
     }
