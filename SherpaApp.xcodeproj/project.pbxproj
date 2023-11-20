@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4B2B0709EB0095E16B /* Users.swift */; };
 		13AB1D4E2B070A400095E16B /* RowUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4D2B070A400095E16B /* RowUser.swift */; };
-		13AB1D522B0AE2020095E16B /* UsersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 13AB1D512B0AE2020095E16B /* UsersData.json */; };
 		25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368752B06CD90004B48EA /* SherpaAppApp.swift */; };
 		25B368782B06CD90004B48EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368772B06CD90004B48EA /* ContentView.swift */; };
 		25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B368792B06CD92004B48EA /* Assets.xcassets */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		13AB1D4B2B0709EB0095E16B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		13AB1D4D2B070A400095E16B /* RowUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowUser.swift; sourceTree = "<group>"; };
-		13AB1D512B0AE2020095E16B /* UsersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsersData.json; sourceTree = "<group>"; };
 		25B368722B06CD90004B48EA /* SherpaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherpaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B368752B06CD90004B48EA /* SherpaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppApp.swift; sourceTree = "<group>"; };
 		25B368772B06CD90004B48EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			children = (
 				25B368902B06CD92004B48EA /* SherpaAppUITests.swift */,
 				25B368922B06CD92004B48EA /* SherpaAppUITestsLaunchTests.swift */,
-				13AB1D512B0AE2020095E16B /* UsersData.json */,
 			);
 			path = SherpaAppUITests;
 			sourceTree = "<group>";
@@ -256,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B3687D2B06CD92004B48EA /* Preview Assets.xcassets in Resources */,
-				13AB1D522B0AE2020095E16B /* UsersData.json in Resources */,
 				25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
