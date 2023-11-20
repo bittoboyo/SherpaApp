@@ -13,3 +13,7 @@ struct Users: Hashable, Codable {
     var occupation: String
     var description: String
 }
+
+
+
+
