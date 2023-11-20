@@ -22,6 +22,7 @@
 		25DC1E752B06DEF5003766D1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC1E742B06DEF5003766D1 /* ProfileView.swift */; };
 		25DC1E772B0711FA003766D1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DC1E762B0711FA003766D1 /* LocationManager.swift */; };
 		9DB216672B0AFBE300E4D864 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB216662B0AFBE300E4D864 /* UserRow.swift */; };
+		9DB2166D2B0B08FB00E4D864 /* UserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DB2166C2B0B08FB00E4D864 /* UserData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		25DC1E742B06DEF5003766D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		25DC1E762B0711FA003766D1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		9DB216662B0AFBE300E4D864 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		9DB2166C2B0B08FB00E4D864 /* UserData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UserData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				25DC1E762B0711FA003766D1 /* LocationManager.swift */,
 				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				25B368792B06CD92004B48EA /* Assets.xcassets */,
+				9DB2166C2B0B08FB00E4D864 /* UserData.json */,
 				25B3687B2B06CD92004B48EA /* Preview Content */,
 				13AB1D4B2B0709EB0095E16B /* Users.swift */,
 				13AB1D4D2B070A400095E16B /* ModalData.swift */,
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB2166D2B0B08FB00E4D864 /* UserData.json in Resources */,
 				25B3687D2B06CD92004B48EA /* Preview Assets.xcassets in Resources */,
 				25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */,
 			);
