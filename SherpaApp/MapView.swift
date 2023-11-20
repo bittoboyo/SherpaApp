@@ -27,6 +27,12 @@ struct MapView: View {
             pointsOfInterest: .excludingAll,
             showsTraffic: false))
             
+            Button("Marker Mockup") {
+                checkInList = true
+            }
+            .background(.white)
+            
+
             if checkInList == true{
             //overlay screen for check-in member list
                 ZStack{
