@@ -4,17 +4,9 @@ struct PeopleView: View {
     var body: some View {
         VStack {
             
-            
-            
-            
-            
-            Text("All About")
-                .font(.largeTitle)
+                Text("All about People")
+                .font(.title)
                 .fontWeight(.bold)
-                .padding()
-            
-            Text("People")
-            
             
             
             
