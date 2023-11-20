@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4B2B0709EB0095E16B /* Users.swift */; };
 		13AB1D4E2B070A400095E16B /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4D2B070A400095E16B /* ModalData.swift */; };
-		13AB1D562B0B00D80095E16B /* UsersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 13AB1D552B0B00D80095E16B /* UsersData.json */; };
+		13AB1D5A2B0B07280095E16B /* UsersData.json in Resources */ = {isa = PBXBuildFile; fileRef = 13AB1D592B0B07280095E16B /* UsersData.json */; };
 		25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368752B06CD90004B48EA /* SherpaAppApp.swift */; };
 		25B368782B06CD90004B48EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368772B06CD90004B48EA /* ContentView.swift */; };
 		25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B368792B06CD92004B48EA /* Assets.xcassets */; };
@@ -45,10 +45,10 @@
 /* Begin PBXFileReference section */
 		13AB1D4B2B0709EB0095E16B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		13AB1D4D2B070A400095E16B /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
-		13AB1D552B0B00D80095E16B /* UsersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = UsersData.json; path = ../../../Downloads/BuildingListsAndNavigation/Resources/UsersData.json; sourceTree = "<group>"; };
+		13AB1D592B0B07280095E16B /* UsersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsersData.json; sourceTree = "<group>"; };
 		25B368722B06CD90004B48EA /* SherpaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherpaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B368752B06CD90004B48EA /* SherpaAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaAppApp.swift; sourceTree = "<group>"; };
-		25B368772B06CD90004B48EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25B368772B06CD90004B48EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		25B368792B06CD92004B48EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25B3687C2B06CD92004B48EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		25B368822B06CD92004B48EA /* SherpaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SherpaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +112,6 @@
 		25B368742B06CD90004B48EA /* SherpaApp */ = {
 			isa = PBXGroup;
 			children = (
-				13AB1D552B0B00D80095E16B /* UsersData.json */,
 				25B368772B06CD90004B48EA /* ContentView.swift */,
 				25DC1E742B06DEF5003766D1 /* ProfileView.swift */,
 				25DC1E722B06DEED003766D1 /* SavedView.swift */,
@@ -121,6 +120,7 @@
 				25DC1E762B0711FA003766D1 /* LocationManager.swift */,
 				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				25B368792B06CD92004B48EA /* Assets.xcassets */,
+				13AB1D592B0B07280095E16B /* UsersData.json */,
 				25B3687B2B06CD92004B48EA /* Preview Content */,
 				13AB1D4B2B0709EB0095E16B /* Users.swift */,
 				13AB1D4D2B070A400095E16B /* ModalData.swift */,
@@ -259,7 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B3687D2B06CD92004B48EA /* Preview Assets.xcassets in Resources */,
-				13AB1D562B0B00D80095E16B /* UsersData.json in Resources */,
+				13AB1D5A2B0B07280095E16B /* UsersData.json in Resources */,
 				25B3687A2B06CD92004B48EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
