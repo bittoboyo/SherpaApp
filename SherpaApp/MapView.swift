@@ -4,7 +4,6 @@ import SwiftUI
 struct MapView: View {
     
     @StateObject var manager = LocationManager()
-    @Namespace var mapScope
     
     @State var checkInList = false
     private let rectangleHeight: CGFloat = 852
@@ -16,21 +15,17 @@ struct MapView: View {
     
     var body: some View {
         ZStack{
-            
-            Map(coordinateRegion: $manager.region, showsUserLocation: true)
-                .frame(height: 765)
-                .edgesIgnoringSafeArea(.all)
-                .mapControls {
-                    MapUserLocationButton()
-                }
-            
-            //Mockup button for the place marker
-            Button("Marker Mockup") {
-                checkInList = true
+            Map {
+                Marker("Alpaca Cafe",
+                   systemImage: "cup.and.saucer.fill",
+                   coordinate: .alpacaCafe)
             }
-                .frame(width:150, height:30)
-                .background(.white)
-                .cornerRadius(15)
+            .mapControls {
+                MapUserLocationButton()
+            }
+            .mapStyle(.standard(elevation: .flat,
+            pointsOfInterest: .excludingAll,
+            showsTraffic: false))
             
             if checkInList == true{
             //overlay screen for check-in member list
@@ -75,4 +70,8 @@ struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
     }
+}
+
+extension CLLocationCoordinate2D {
+  static let alpacaCafe = CLLocationCoordinate2D(latitude: 37.337349, longitude: -122.014681)
 }
