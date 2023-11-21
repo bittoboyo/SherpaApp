@@ -68,10 +68,11 @@ struct SavedView: View {
 
 func savedPerson(profilePhoto: String, name: String, jobTitle: String, company: String, industry: String) -> some View {
      return ZStack {
-        RoundedRectangle(cornerRadius: 20)
+        Rectangle()
             .fill(Color.white)
             .frame(width: 360, height: 150)
-            .shadow(color: .gray, radius: 5, x: 5, y: 5)
+            .border(.gray, width: 1)
+            .cornerRadius(20)
         HStack {
             Image(profilePhoto)
                 .resizable()
