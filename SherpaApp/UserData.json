@@ -1,0 +1,123 @@
+[
+    {
+        "name": "John smith",
+        "industry": "IT",
+        "skills": "JavaScript","Figma","Proj Mgmt",
+        "occupation": "Interaction Designer at Apple",
+        "coordinates": {
+            "longitude": 151.1991706,
+            "latitude": -33.8840019
+        },
+        "description": "The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks.",
+        "imageName": "JohnS"
+    },
+    {
+        "name": "Mary Pops",
+        "industry": "IT",
+        "skills": "UI/UX","Research",
+        "occupation": "Product Manager at Sherpa",
+        "coordinates": {
+            "longitude": 151.1991706,
+            "latitude": -33.8840019
+        },
+        "description": "Taking a break from my project, I’m here for the networking and of course, a latte.",
+        "imageName": "MaryP"
+    },
+    {
+      "name": "Alice Johnson",
+      "industry": "Marketing",
+      "skills": ["Social Media Management", "Content Creation", "SEO"],
+      "occupation": "Marketing Specialist at XYZ Company",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Passionate about creating engaging content and building strong online communities.",
+      "imageName": "AliceJ"
+    }
+    {
+      "name": "Bob Anderson",
+      "industry": "Finance",
+      "skills": ["Financial Analysis", "Risk Management", "Data Analytics"],
+      "occupation": "Financial Analyst at ABC Bank",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Dedicated to providing accurate financial insights to support business decisions.",
+      "imageName": "BobA"
+    }
+    {
+      "name": "Eva Martinez",
+      "industry": "Healthcare",
+      "skills": ["Medical Research", "Patient Care", "Data Analysis"],
+      "occupation": "Medical Researcher at Medical Center",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Committed to advancing medical knowledge through research and analysis.",
+      "imageName": "EvaM"
+    }
+    {
+      "name": "Chris Taylor",
+      "industry": "Education",
+      "skills": ["Curriculum Development", "Teaching", "Educational Technology"],
+      "occupation": "High School Teacher at City High School",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Inspiring students to love learning and embrace new educational technologies.",
+      "imageName": "ChrisT"
+    }
+    {
+      "name": "Olivia Walker",
+      "industry": "Fashion",
+      "skills": ["Fashion Design", "Pattern Making", "Photoshop"],
+      "occupation": "Fashion Designer at Vogue Couture",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Bringing creativity and style to the world of fashion through innovative designs.",
+      "imageName": "OliviaW"
+    }
+    {
+      "name": "Daniel Lee",
+      "industry": "Engineering",
+      "skills": ["Mechanical Engineering", "CAD", "Project Management"],
+      "occupation": "Mechanical Engineer at Tech Innovations",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Designing and implementing cutting-edge solutions in the field of mechanical engineering.",
+      "imageName": "DanielL"
+    }
+    {
+      "name": "Sophie Carter",
+      "industry": "Hospitality",
+      "skills": ["Customer Service", "Event Planning", "Communication"],
+      "occupation": "Event Coordinator at Grand Events",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Creating memorable experiences through meticulous event planning and execution.",
+      "imageName": "SophieC"
+    }
+    {
+      "name": "Michael Brown",
+      "industry": "Real Estate",
+      "skills": ["Property Management", "Real Estate Sales", "Negotiation"],
+      "occupation": "Real Estate Agent at Dream Homes Realty",
+      "coordinates": {
+          "longitude": 151.1991706,
+          "latitude": -33.8840019
+      },
+      "description": "Helping clients find their dream homes through expert real estate services.",
+      "imageName": "MichaelB"
+    }
+]
+
