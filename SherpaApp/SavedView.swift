@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SavedView: View {
     var body: some View {
+        @State var isBookmarked = false
         ScrollView {
             VStack {
                 HStack {
@@ -66,48 +67,48 @@ struct SavedView: View {
     }
 }
 
-//func savedPerson(profilePhoto: String, name: String, jobTitle: String, company: String, industry: String) -> some View {
-//     return ZStack {
-//        Rectangle()
-//            .fill(Color.white)
-//            .frame(width: 360, height: 150)
-//            .border(.gray, width: 1)
-//            .cornerRadius(20)
-//        HStack {
-//            Image(profilePhoto)
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 100)
-//                .clipShape(Circle())
-//            VStack {
-//                Text(name)
-//                    .font(.title2)
-//                    .fontWeight(.bold)
-//                    .frame(maxWidth: 190, alignment: .leading)
-//                Text(jobTitle + "\n" + "at " + company)
-//                    .font(.subheadline)
-//                    .frame(maxWidth: 190, alignment: .leading)
-//                    .padding(.bottom, 5)
-//                Text(industry)
-//                    .font(.subheadline)
-//                    .fontWeight(.bold)
-//                    .foregroundColor(.white)
-//                    .padding(.horizontal, 20)
-//                    .background(.blue)
-//                    .cornerRadius(5)
-//                    .frame(maxWidth: 190, alignment: .leading)
-//            }
-//            Button {
-//            } label: {
-//                Image(systemName: "bookmark.fill")
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 18)
-//                    .offset(x: -7, y: -30)
-//            }
-//        }
-//    }
-//}
+func savedPerson(profilePhoto: String, name: String, jobTitle: String, company: String, industry: String) -> some View {
+    @State var isBookmarked = false
+     return ZStack {
+        RoundedRectangle(cornerRadius: 20)
+             .stroke(.gray, lineWidth: 1)
+             .fill(Color.white)
+             .frame(width: 370, height: 150)
+         HStack {
+             Image(profilePhoto)
+                 .resizable()
+                 .scaledToFit()
+                 .frame(width: 100)
+                 .clipShape(Circle())
+             VStack {
+                 Text(name)
+                     .font(.title2)
+                     .fontWeight(.bold)
+                     .frame(maxWidth: 170, alignment: .leading)
+                 Text(jobTitle + "\n" + "at " + company)
+                     .font(.subheadline)
+                     .frame(maxWidth: 170, alignment: .leading)
+                     .padding(.bottom, 5)
+                 Text(industry)
+                     .font(.subheadline)
+                     .fontWeight(.bold)
+                     .foregroundColor(.white)
+                     .padding(.horizontal, 20)
+                     .background(.blue)
+                     .cornerRadius(5)
+                     .frame(maxWidth: 170, alignment: .leading)
+             }
+             Toggle(isOn: $isBookmarked) {
+                 Image(systemName: isBookmarked ? "bookmark.fill" : "bookmark")
+                     .font(.system(size: 30))
+             }
+                    .toggleStyle(.button)
+                    .clipShape(Circle())
+                    .offset(x: 10, y: -25)
+                    .padding(0)
+         }
+    }
+}
 
 struct SavedView_Previews: PreviewProvider {
     static var previews: some View {
