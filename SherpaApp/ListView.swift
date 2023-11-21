@@ -15,7 +15,7 @@ struct ListView: View {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                 }
                 .frame(maxWidth: 360, alignment: .leading)
-                .paddi ng(.bottom, 5)
+                .padding(.bottom, 5)
                 
                 Text("Saved Contacts")
                     .font(.title)
