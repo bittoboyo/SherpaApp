@@ -63,11 +63,10 @@ struct SavedView: View {
                 )
             }
         }
-        
     }
 }
 
-func savedPerson(profilePhoto: String, name: String, jobTitle: String, company: String, industry: String) -> some View {
+func savedPerson (profilePhoto: String, name: String, jobTitle: String, company: String, industry: String) -> some View {
     @State var isBookmarked = false
      return ZStack {
         RoundedRectangle(cornerRadius: 20)
