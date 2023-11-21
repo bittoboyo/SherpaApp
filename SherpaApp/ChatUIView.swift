@@ -11,6 +11,7 @@ struct Message: Identifiable {
     let id = UUID()
     let text: String
     let isSentByCurrentUser: Bool
+    let userName: String
 }
 class ChatViewModel: ObservableObject {
     @Published var messages: [Message] = []
