@@ -39,6 +39,79 @@ struct MapView: View {
                         Text("10")
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
+                            .foregroundStyle(.white)
+                    }
+                }
+                
+                Annotation("Epic Coffee", coordinate: .epicCoffee) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(.blue)
+                        Button("☕️") {
+                            checkInList = true
+                        }
+                        .padding(5)
+                        Circle()
+                            .offset(x: 20, y: -20)
+                            .fill(.blue)
+                        Text("4")
+                            .offset(x: 20, y: -20)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.white)
+                    }
+                }
+                
+                Annotation("Sydney Local Library", coordinate: .sydneyLibrary) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(.blue)
+                        Button("📚") {
+                            checkInList = true
+                        }
+                        .padding(5)
+                        Circle()
+                            .offset(x: 20, y: -20)
+                            .fill(.blue)
+                        Text("17")
+                            .offset(x: 20, y: -20)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.white)
+                    }
+                }
+                
+                Annotation("Abercrombie Hotel", coordinate: .abercrombieHotel) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(.blue)
+                        Button("🏨") {
+                            checkInList = true
+                        }
+                        .padding(5)
+                        Circle()
+                            .offset(x: 20, y: -20)
+                            .fill(.blue)
+                        Text("22")
+                            .offset(x: 20, y: -20)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.white)
+                    }
+                }
+                
+                Annotation("Fortress Sydney", coordinate: .fortressSydney) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(.blue)
+                        Button("🎮") {
+                            checkInList = true
+                        }
+                        .padding(5)
+                        Circle()
+                            .offset(x: 20, y: -20)
+                            .fill(.blue)
+                        Text("20")
+                            .offset(x: 20, y: -20)
+                            .fontWeight(.bold)
+                            .foregroundStyle(.white)
                     }
                 }
             }
@@ -102,6 +175,9 @@ struct MapView_Previews: PreviewProvider {
 }
 
 extension CLLocationCoordinate2D {
-    static let alpacaCafe = CLLocationCoordinate2D(latitude:    -33.88439209095589, longitude: 151.2010453846179)
+    static let alpacaCafe = CLLocationCoordinate2D(latitude:    -33.88386359778099, longitude: 151.2014035499774)
     static let epicCoffee = CLLocationCoordinate2D(latitude: -33.884535570309076, longitude: 151.19885205603353)
+    static let sydneyLibrary = CLLocationCoordinate2D(latitude: -33.884569732024154, longitude: 151.19709903919133)
+    static let abercrombieHotel = CLLocationCoordinate2D(latitude: -33.8874295, longitude: 151.1986847)
+    static let fortressSydney = CLLocationCoordinate2D(latitude: -33.88461644233929, longitude: 151.20067320728768)
 }
