@@ -4,9 +4,7 @@ import SwiftUI
 struct MapView: View {
     
     @StateObject var manager = LocationManager()
-    
-    @State private var position: MapCameraPosition = .userLocation(fallback: .automatic)
-    
+
     @State var checkInList = false
     private let rectangleHeight: CGFloat = 852
     private let rectangleWidth: CGFloat = 393
@@ -17,13 +15,21 @@ struct MapView: View {
     
     var body: some View {
         ZStack{
-            Map(position: $position) {
+            Map() {
                 Annotation("Alpaca Cafe", coordinate: .alpacaCafe) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Text("☕️")
-                            .padding(5)
+                        Button("☕️") {
+                            checkInList = true
+                        }
+                        .padding(5)
+                        Circle()
+                            .offset(x: 20, y: -20)
+                            .fill(.blue)
+                        Text("10")
+                            .offset(x: 20, y: -20)
+                            .fontWeight(.bold)
                     }
                 }
             }
@@ -31,6 +37,7 @@ struct MapView: View {
                 MapUserLocationButton()
             }
             .mapStyle(.standard(
+                emphasis: .automatic,
                 pointsOfInterest: .excludingAll,
                 showsTraffic: false))
             .onAppear {
@@ -38,11 +45,6 @@ struct MapView: View {
             }
             
             let viewToAnimate = UIView()
-            
-            Button("Mockup button") {
-                checkInList = true
-            }
-            .background(.white)
             
 
             if checkInList == true{
@@ -93,12 +95,4 @@ struct MapView_Previews: PreviewProvider {
 
 extension CLLocationCoordinate2D {
   static let alpacaCafe = CLLocationCoordinate2D(latitude: -33.88439209095589, longitude: 151.2010453846179)
-}
-
-extension MKCoordinateRegion {
-    static let test = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(
-            latitude: 42.360256, longitude: -71.057279),
-        span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
-    )
 }
