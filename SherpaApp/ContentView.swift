@@ -12,10 +12,15 @@ struct ContentView: View {
                     .tabItem {
                         Label("Explore", systemImage: "map")
                     }
+                ChatView()
+                    .tabItem {
+                        Label("Chat",systemImage: "message.fill")
+                    }
                 ProfileView()
                     .tabItem {
                         Label("Profile", systemImage: "person.crop.circle.fill")
                 }
+
             }
         }
     }
