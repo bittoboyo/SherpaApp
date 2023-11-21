@@ -5,7 +5,7 @@ struct PeopleView: View {
         ScrollView {
             VStack {
                 HStack {
-                    Text("Saved Contacts")
+                    Text("Alpaca Cafe")
                         .font(.title)
                         .fontWeight(.bold)
                         .frame(maxWidth: 360, alignment: .leading)
@@ -18,91 +18,84 @@ struct PeopleView: View {
                     .font(.title3)
                     .frame(maxWidth: 360, alignment: .leading)
                 
-                savedPerson(
+                listPeople(
                     profilePhoto: "John",
                     name: "John Smith",
                     jobTitle: "Interaction Designer",
                     company: "Apple",
-                    industry: "IT"
+                    industry: "IT",
+                    skill: "Xcode",
+                    description: "“The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!”"
                 )
-                savedPerson(
-                    profilePhoto: "MaryP",
-                    name: "Mary Pops",
-                    jobTitle: "UX Researcher",
-                    company: "Microsoft",
-                    industry: "IT"
-                )
-                savedPerson(
-                    profilePhoto: "EvaM",
-                    name: "Eva Miller",
-                    jobTitle: "Data Scientist",
-                    company: "Amazon",
-                    industry: "IT"
-                )
-                savedPerson(
-                    profilePhoto: "EvaM",
-                    name: "Eva Miller",
-                    jobTitle: "Data Scientist",
-                    company: "Amazon",
-                    industry: "IT"
-                )
-                savedPerson(
-                    profilePhoto: "EvaM",
-                    name: "Eva Miller",
-                    jobTitle: "Data Scientist",
-                    company: "Amazon",
-                    industry: "IT"
-                )
-                savedPerson(
-                    profilePhoto: "EvaM",
-                    name: "Eva Miller",
-                    jobTitle: "Data Scientist",
-                    company: "Amazon",
-                    industry: "IT"
-                )
+        
             }
         }
         
     }
 }
 
-func savedPerson(profilePhoto: String, name: String, jobTitle: String, company: String, industry: String) -> some View {
-     return ZStack {
+func listPeople(profilePhoto: String,
+                 name: String,
+                 jobTitle: String,
+                 company: String,
+                 industry: String,
+                 skill: String,
+                 description: String)
+-> some View {
+    return ZStack {
         RoundedRectangle(cornerRadius: 20)
+            .stroke(.gray, lineWidth: 1)
             .fill(Color.white)
-            .frame(width: 360, height: 150)
-            .shadow(color: .gray, radius: 5, x: 5, y: 5)
+            .frame(width: 370, height: 200)
         HStack {
             Image(profilePhoto)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 100)
+                .frame(width: 80)
                 .clipShape(Circle())
+                .offset(x: 10, y: -10)
             VStack {
-                Text(name)
-                    .font(.title2)
-                    .fontWeight(.bold)
-                    .frame(maxWidth: 190, alignment: .leading)
-                Text(jobTitle + "\n" + "at " + company)
-                    .font(.subheadline)
-                    .frame(maxWidth: 190, alignment: .leading)
-                    .padding(.bottom, 5)
-                Text(industry)
+                HStack{
+                    Text(name)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: 180, alignment: .leading)
+                    Text(industry)
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding(.horizontal, 20)
+                        .background(.blue)
+                        .cornerRadius(5)
+//                        .frame(maxWidth: 190, alignment: .leading)
+                }
+                Text(skill)
                     .font(.subheadline)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .padding(.horizontal, 20)
-                    .background(.blue)
+                    .background(.gray)
                     .cornerRadius(5)
                     .frame(maxWidth: 190, alignment: .leading)
+                
+                Text(jobTitle + "\n" + "at " + company)
+                    .font(.subheadline)
+                    .frame(maxWidth: 190, alignment: .leading)
+                    .padding(.bottom, 5)
+                
+                Text(description)
+                    .font(.footnote)
+                    .frame(width: 220, alignment: .leading)
+                    .padding(.bottom, 5)
             }
             Button {
             } label: {
-                Image(systemName: "bookmark.fill")
+                Image(systemName: "chevron.right")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 18)
-                    .offset(x: -7, y: -30)
+                    .frame(width: 10)
+                    .offset(x: 0, y: -3)
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
             }
         }
     }
