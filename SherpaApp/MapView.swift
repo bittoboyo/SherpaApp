@@ -4,7 +4,7 @@ import SwiftUI
 struct MapView: View {
     
     @StateObject var manager = LocationManager()
-    
+
     @State var checkInList = false
     private let rectangleHeight: CGFloat = 852
     private let rectangleWidth: CGFloat = 393
@@ -15,26 +15,41 @@ struct MapView: View {
     
     var body: some View {
         ZStack{
-            Map {
-                Marker("Alpaca Cafe",
-                   systemImage: "cup.and.saucer.fill",
-                   coordinate: .alpacaCafe)
+            Map() {
+                Annotation("Alpaca Cafe", coordinate: .alpacaCafe) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 5)
+                            .fill(.blue)
+                        Button("☕️") {
+                            checkInList = true
+                        }
+                        .padding(5)
+                        Circle()
+                            .offset(x: 20, y: -20)
+                            .fill(.blue)
+                        Text("10")
+                            .offset(x: 20, y: -20)
+                            .fontWeight(.bold)
+                    }
+                }
             }
             .mapControls {
                 MapUserLocationButton()
             }
-            .mapStyle(.standard(elevation: .flat,
-            pointsOfInterest: .excludingAll,
-            showsTraffic: false))
-            
-            Button("Marker Mockup") {
-                checkInList = true
+            .mapStyle(.standard(
+                emphasis: .automatic,
+                pointsOfInterest: .excludingAll,
+                showsTraffic: false))
+            .onAppear {
+                CLLocationManager().requestWhenInUseAuthorization()
             }
-            .background(.white)
+            
+            let viewToAnimate = UIView()
             
 
             if checkInList == true{
             //overlay screen for check-in member list
+                
                 ZStack{
                     RoundedRectangle(cornerRadius: 20)
                         .foregroundColor(.white)
@@ -50,7 +65,7 @@ struct MapView: View {
                         .gesture(dragGesture)
                         .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
                 }
-
+                .transition(.move(edge: .bottom))
             }
         }
     }
@@ -79,5 +94,5 @@ struct MapView_Previews: PreviewProvider {
 }
 
 extension CLLocationCoordinate2D {
-  static let alpacaCafe = CLLocationCoordinate2D(latitude: 37.337349, longitude: -122.014681)
+  static let alpacaCafe = CLLocationCoordinate2D(latitude: -33.88439209095589, longitude: 151.2010453846179)
 }

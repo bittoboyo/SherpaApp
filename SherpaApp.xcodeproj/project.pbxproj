@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1314692D2B0C210800367CF3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1314692C2B0C210800367CF3 /* ListView.swift */; };
 		13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4B2B0709EB0095E16B /* Users.swift */; };
 		13AB1D4E2B070A400095E16B /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4D2B070A400095E16B /* ModalData.swift */; };
 		25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368752B06CD90004B48EA /* SherpaAppApp.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1314692C2B0C210800367CF3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		13AB1D4B2B0709EB0095E16B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		13AB1D4D2B070A400095E16B /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
 		25B368722B06CD90004B48EA /* SherpaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherpaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 				9D81A9F12B0C319800CE3A48 /* ChatUIView.swift */,
 				25DC1E742B06DEF5003766D1 /* ProfileView.swift */,
 				25DC1E722B06DEED003766D1 /* SavedView.swift */,
+				1314692C2B0C210800367CF3 /* ListView.swift */,
 				25DC1E6E2B06DEBE003766D1 /* PeopleView.swift */,
 				25DC1E6C2B06DDF1003766D1 /* MapView.swift */,
 				25DC1E762B0711FA003766D1 /* LocationManager.swift */,
@@ -293,6 +296,7 @@
 				25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */,
 				25DC1E752B06DEF5003766D1 /* ProfileView.swift in Sources */,
 				25DC1E6F2B06DEBE003766D1 /* PeopleView.swift in Sources */,
+				1314692D2B0C210800367CF3 /* ListView.swift in Sources */,
 				13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */,
 				13AB1D4E2B070A400095E16B /* ModalData.swift in Sources */,
 			);
