@@ -102,5 +102,6 @@ struct MapView_Previews: PreviewProvider {
 }
 
 extension CLLocationCoordinate2D {
-  static let alpacaCafe = CLLocationCoordinate2D(latitude: -33.88439209095589, longitude: 151.2010453846179)
+    static let alpacaCafe = CLLocationCoordinate2D(latitude:    -33.88439209095589, longitude: 151.2010453846179)
+    static let epicCoffee = CLLocationCoordinate2D(latitude: -33.884535570309076, longitude: 151.19885205603353)
 }
