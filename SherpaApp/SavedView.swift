@@ -105,7 +105,6 @@ func savedPerson (profilePhoto: String, name: String, jobTitle: String, company:
                     .clipShape(Circle())
                     .offset(x: 10, y: -25)
                     .padding(0)
-             
          }
     }
 }
