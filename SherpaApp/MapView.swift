@@ -1,6 +1,15 @@
 import MapKit
 import SwiftUI
 
+extension AnyTransition {
+    static var moveAndFade: AnyTransition {
+        .asymmetric(
+                    insertion: .move(edge: .trailing).combined(with: .opacity),
+                    removal: .scale.combined(with: .opacity)
+                )
+    }
+}
+
 struct MapView: View {
     
     @StateObject var manager = LocationManager()
@@ -44,8 +53,7 @@ struct MapView: View {
                 CLLocationManager().requestWhenInUseAuthorization()
             }
             
-            let viewToAnimate = UIView()
-            
+
 
             if checkInList == true{
             //overlay screen for check-in member list
@@ -65,7 +73,6 @@ struct MapView: View {
                         .gesture(dragGesture)
                         .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
                 }
-                .transition(.move(edge: .bottom))
             }
         }
     }
@@ -86,6 +93,7 @@ struct MapView: View {
         }
     }
 }
+
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
