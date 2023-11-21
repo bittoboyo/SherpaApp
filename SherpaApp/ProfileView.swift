@@ -36,24 +36,25 @@ struct ProfileView: View {
                 Text("html")
                     .font(.headline)
                     .foregroundColor(.black)
-                    .frame(width: 100, height: 20)
-                    .background(.gray)
+                    .frame(width: 100, height: 25)
+                    .background(Color(red:0.9,green:0.9,blue:0.9))
                     .cornerRadius(5)
                 
                 Text("Figma")
                     .font(.headline)
                     .foregroundColor(.black)
-                    .frame(width: 100, height: 20)
-                    .background(.gray)
+                    .frame(width: 100, height: 25)
+                    .background(Color(red:0.9,green:0.9,blue:0.9))
                     .cornerRadius(5)
                 
                 Text("Proj Mgt")
                     .font(.headline)
                     .foregroundColor(.black)
-                    .frame(width: 100, height: 20)
-                    .background(.gray)
+                    .frame(width: 100, height: 25)
+                    .background(Color(red:0.9,green:0.9,blue:0.9))
                     .cornerRadius(5)
             }
+            .padding(.bottom, 20)
             
             //Send Message button and Save Contact
             HStack {
@@ -63,7 +64,7 @@ struct ProfileView: View {
                 .font(.system(.headline))
                 .foregroundColor(.black)
                 .frame(maxWidth: 150, maxHeight: 30)
-                .background(.gray)
+                .background(Color(red:0.9,green:0.9,blue:0.9))
                 .cornerRadius(15)
                 
                 Button("Save Contact") {
@@ -72,10 +73,10 @@ struct ProfileView: View {
                 .font(.system(.headline))
                 .foregroundColor(.black)
                 .frame(maxWidth: 150, maxHeight: 30)
-                .background(.gray)
+                .background(Color(red:0.9,green:0.9,blue:0.9))
                 .cornerRadius(15)
             }
-            .padding(.vertical, 5)
+            .padding(.bottom, 20)
             
             //Icebreaker
             VStack(alignment: .leading){
@@ -91,9 +92,9 @@ struct ProfileView: View {
                     .padding(.horizontal,10)
             }
             .frame(width: 350, height: 120)
-            .background(.gray)
+            .background(Color(red:0.9,green:0.9,blue:0.9))
             .cornerRadius(5)
-            
+            .padding(.bottom, 20)
             
             //Experience
             VStack{
@@ -126,6 +127,7 @@ struct ProfileView: View {
                 }
             }
             .padding(.horizontal)
+            .padding(.bottom, 20)
             
             //Education
             VStack{
@@ -158,6 +160,7 @@ struct ProfileView: View {
                 }
             }
             .padding(.horizontal)
+            .padding(.bottom, 20)
             
             //Check LinkedIn Profile Button
             Button("LinkedIn") {
@@ -166,7 +169,7 @@ struct ProfileView: View {
             .font(.system(.headline))
             .foregroundColor(.black)
             .frame(maxWidth: 150, maxHeight: 30)
-            .background(.gray)
+            .background(Color(red:0.9,green:0.9,blue:0.9))
             .cornerRadius(15)
 
         }
