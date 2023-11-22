@@ -17,9 +17,9 @@ struct MapView: View {
     private let rectangleHeight: CGFloat = 852
     private let rectangleWidth: CGFloat = 393
     @State private var pos = CGPoint(x: 100, y: 100)
-    
     @State private var offset = CGSize.zero
     
+    @State private var vibrateOnRing = true
     
     var body: some View {
         ZStack{
@@ -128,6 +128,16 @@ struct MapView: View {
             
             
             HeaderView()
+            
+            VStack(alignment:.leading){
+                Text("Auto Check-in")
+                Toggle(isOn: $vibrateOnRing) {
+                }
+                    .offset(x:-340)
+            }
+            .frame(width:.infinity, height:200)
+            .offset(x:10,y:-240)
+
 
             if checkInList == true{
             //overlay screen for check-in member list
@@ -161,10 +171,10 @@ struct MapView: View {
         .onChanged {
             value in
             @State var rectY = value.startLocation.y + value.translation.height
-            if rectY < 200 && rectY > -400{
+            if rectY < 210 && rectY > -450{
                 offset = CGSize(width: 0, height: rectY)
             }
-            else if rectY >= 200{
+            else if rectY >= 210{
                 checkInList = false
             }
         }

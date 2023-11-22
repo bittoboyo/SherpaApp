@@ -43,7 +43,7 @@ struct SavedView: View {
                         NavigationLink(destination: JohnProfileView()){
                             savedPerson(
                                 profilePhoto: "EvaM",
-                                name: "Eva Miller",
+                                name: "Elaine Houston",
                                 jobTitle: "Data Scientist",
                                 company: "Amazon",
                                 industry: "IT"
@@ -107,7 +107,7 @@ func savedPerson (profilePhoto: String, name: String, jobTitle: String, company:
         RoundedRectangle(cornerRadius: 20)
             .stroke(.gray, lineWidth: 1)
             .fill(Color.white)
-            .frame(width: 370, height: 150)
+            .frame(width: 360, height: 150)
         HStack {
                 Image(profilePhoto)
                     .resizable()
@@ -140,17 +140,19 @@ func savedPerson (profilePhoto: String, name: String, jobTitle: String, company:
                     .cornerRadius(5)
                     .frame(maxWidth: 200, alignment: .leading)
             }
-            Button {
-                isUnsavePopupVisible.toggle()
-                //isToggled.toggle()
-            } label: {
-                Image(systemName: "bookmark.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 20)
-                    .offset(x: -5, y: -25)
-            }
+            Spacer()
+//            Button {
+//                isUnsavePopupVisible.toggle()
+//                //isToggled.toggle()
+//            } label: {
+//                Image(systemName: "bookmark.fill")
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 20)
+//                    .offset(x: -5, y: -25)
+//            }
         }
+        .padding(.horizontal,30)
     }
 }
 

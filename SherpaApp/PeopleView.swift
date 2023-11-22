@@ -12,17 +12,17 @@ struct PeopleView: View {
                         .fontWeight(.bold)
                         .frame(maxWidth: 360, alignment: .leading)
                         .padding(.top, 20)
-                        .offset(x: 10, y: 10)
                     
                     Button {
                     } label: {
                         Image(systemName: "arrow.triangle.turn.up.right.diamond.fill")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 40)
-                            .offset(x: -20, y: 10)
+                            .frame(width: 30)
+                            .offset(x: 0, y: 10)
                     }
                 }
+                .padding(.horizontal)
                 Divider()
                     .padding(.bottom, 10)
                 
@@ -32,6 +32,7 @@ struct PeopleView: View {
                                 }
                             }
                             .pickerStyle(.segmented)
+                            .padding(.horizontal)
                 
                 listPeople(
                     profilePhoto: "John",
@@ -56,8 +57,8 @@ struct PeopleView: View {
                 listPeople(
                     profilePhoto: "EvaM",
                     name: "Eva Miler",
-                    occupation: "Medical Researcher at Medical Center",
-                    industry: "Healthcare",
+                    occupation: "Researcher at Medical Center",
+                    industry: "Health",
                     skill: "DA",
                     skill1: "Medi-R",
                     skill2: "Empathy",
@@ -74,6 +75,9 @@ struct PeopleView: View {
                     description: "“Dedicated to providing accurate financial insights to support business decisions.”"
                 )
             }
+            Rectangle()
+                .frame(width:.infinity,height: 400)
+                .foregroundColor(.white)
         }
         
     }
@@ -89,19 +93,23 @@ func listPeople(profilePhoto: String,
                  description: String)
 -> some View {
     return ZStack {
+        
+        //Frame
         RoundedRectangle(cornerRadius: 20)
             .stroke(.gray, lineWidth: 1)
             .fill(Color.white)
-            .frame(width: 370, height: 200)
-            .shadow(color: .gray, radius: 5, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
+            .frame(width: 360, height: 180)
+//            .shadow(color: .gray, radius: 5, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
+        
+        //Member card info
         HStack {
             Image(profilePhoto)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 80)
                 .clipShape(Circle())
-                .padding(.leading)
-//                .offset(x: 18, y: -10)
+            
+            //Member details
             VStack(alignment: .leading) {
                 HStack{
                     Text(name)
@@ -112,7 +120,7 @@ func listPeople(profilePhoto: String,
                         .font(.subheadline)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                        .padding(.horizontal, 20)
+                        .frame(width: 80, height: 20)
                         .background(.blue)
                         .cornerRadius(5)
                 }
@@ -123,7 +131,6 @@ func listPeople(profilePhoto: String,
                         .fontWeight(.bold)
                         .foregroundColor(.black)
                         .frame(width: 70, height: 20)
-//                        .padding(.horizontal, 20)
                         .background(Color(red:0.9,green:0.9,blue:0.9))
                         .cornerRadius(5)
 
@@ -132,32 +139,28 @@ func listPeople(profilePhoto: String,
                         .fontWeight(.bold)
                         .foregroundColor(.black)
                         .frame(width: 70, height: 20)
-//                        .padding(.horizontal, 20)
                         .background(Color(red:0.9,green:0.9,blue:0.9))
                         .cornerRadius(5)
-//                         .frame(width: 100, height: 30)
+
 
                     Text(skill2)
                         .font(.footnote)
                         .fontWeight(.bold)
                         .foregroundColor(.black)
                         .frame(width: 70, height: 20)
-//                        .padding(.horizontal, 20)
+
                         .background(Color(red:0.9,green:0.9,blue:0.9))
                         .cornerRadius(5)
-//                        .frame(width: 100, height: 30)
                 }
-//
+
                 Text(occupation)
                     .font(.subheadline)
                     .frame(maxWidth:300, alignment: .leading)
-//                    .offset(x:26, y:5)
                     .padding(.bottom, 5)
                 
                 Text(description)
                     .font(.footnote)
-                    .frame(width: 270, alignment: .leading)
-//                    .offset(x:12, y:5)
+                    .frame(width: 230, alignment: .leading)
                     .padding(.bottom, 5)
             }
 //            Button {
@@ -170,6 +173,7 @@ func listPeople(profilePhoto: String,
 //                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
 //             }
         }
+        .padding(.horizontal, 30)
     }
 }
 
