@@ -32,7 +32,7 @@ struct PeopleView: View {
                 listPeople(
                     profilePhoto: "John",
                     name: "John Smith",
-                    occupation: "Interaction Designer at apple",
+                    occupation: "Interaction Designer at Apple",
                     industry: "IT",
                     skill: "Swift",
                     skill1: "Figma",
@@ -51,13 +51,23 @@ struct PeopleView: View {
                 )
                 listPeople(
                     profilePhoto: "EvaM",
-                    name: "Eva Martinez",
+                    name: "Eva Miler",
                     occupation: "Medical Researcher at Medical Center",
                     industry: "Healthcare",
                     skill: "DA",
                     skill1: "Medi-R",
                     skill2: "Empathy",
                     description: "“Committed to advancing medical knowledge through research and analysis.”"
+                )
+                listPeople(
+                    profilePhoto: "BobLe",
+                    name: "Bob Anderson",
+                    occupation: "Financial Analyst at ABC Bank",
+                    industry: "Finance",
+                    skill: "Risk Manag",
+                    skill1: "BA",
+                    skill2: "Communication",
+                    description: "“Dedicated to providing accurate financial insights to support business decisions.”"
                 )
             }
         }
@@ -86,14 +96,14 @@ func listPeople(profilePhoto: String,
                 .scaledToFit()
                 .frame(width: 80)
                 .clipShape(Circle())
-                .offset(x: 18, y: -10)
-            VStack {
+                .padding(.leading)
+//                .offset(x: 18, y: -10)
+            VStack(alignment: .leading) {
                 HStack{
                     Text(name)
                         .font(.title2)
                         .fontWeight(.bold)
-                        .frame(maxWidth: 200, alignment: .leading)
-                        .offset(x:7, y:-5)
+
                     Text(industry)
                         .font(.subheadline)
                         .fontWeight(.bold)
@@ -101,62 +111,60 @@ func listPeople(profilePhoto: String,
                         .padding(.horizontal, 20)
                         .background(.blue)
                         .cornerRadius(5)
-//                        .frame(maxWidth: 190, alignment: .leading)
                 }
+                
                 HStack{
                     Text(skill)
                         .font(.footnote)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .background(.gray)
+                        .foregroundColor(.black)
+                        .frame(width: 70, height: 20)
+//                        .padding(.horizontal, 20)
+                        .background(Color(red:0.9,green:0.9,blue:0.9))
                         .cornerRadius(5)
-//                        .frame(maxWidth: 190, alignment: .leading)
-                    
-                        .offset(x:14, y:0)
+
                     Text(skill1)
                         .font(.footnote)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .background(.gray)
+                        .foregroundColor(.black)
+                        .frame(width: 70, height: 20)
+//                        .padding(.horizontal, 20)
+                        .background(Color(red:0.9,green:0.9,blue:0.9))
                         .cornerRadius(5)
-//                        .frame(maxWidth: 190, alignment: .leading)
-//                        .offset(x:4, y:0)
-                    //
+//                         .frame(width: 100, height: 30)
+
                     Text(skill2)
                         .font(.footnote)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 20)
-                        .background(.gray)
+                        .foregroundColor(.black)
+                        .frame(width: 70, height: 20)
+//                        .padding(.horizontal, 20)
+                        .background(Color(red:0.9,green:0.9,blue:0.9))
                         .cornerRadius(5)
-//                        .frame(maxWidth: 190, alignment: .leading)
-//                        .offset(x:-25, y:0)
+//                        .frame(width: 100, height: 30)
                 }
 //
-                
                 Text(occupation)
                     .font(.subheadline)
                     .frame(maxWidth:300, alignment: .leading)
-                    .offset(x:26, y:5)
+//                    .offset(x:26, y:5)
                     .padding(.bottom, 5)
                 
                 Text(description)
                     .font(.footnote)
                     .frame(width: 270, alignment: .leading)
-                    .offset(x:12, y:5)
+//                    .offset(x:12, y:5)
                     .padding(.bottom, 5)
             }
-            Button {
-            } label: {
-                Image(systemName: "chevron.right")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 10)
-                    .offset(x: -15, y: -3)
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-            }
+//            Button {
+//             } label: {
+//                 Image(systemName: "chevron.right")
+//                     .resizable()
+//                     .scaledToFit()
+//                     .frame(width: 10)
+//                     .offset(x: -15, y: -3)
+//                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+//             }
         }
     }
 }
