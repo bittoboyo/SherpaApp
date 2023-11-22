@@ -45,11 +45,12 @@ class ChatViewModel: ObservableObject {
         }
     }
     
-    struct ChatView: View {
-        @ObservedObject var viewModel = ChatViewModel()
-        @State private var messageText = ""
-        
-        var body: some View {
+struct ChatView: View {
+    @ObservedObject var viewModel = ChatViewModel()
+    @State private var messageText = ""
+    
+    var body: some View {
+        NavigationView{
             VStack {
                 // List of messages
                 ProfilePic()
@@ -74,6 +75,7 @@ class ChatViewModel: ObservableObject {
             }
         }
     }
+}
     struct ProfilePic: View {
         var body: some View {
             ZStack(alignment: .bottom) {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D0CDE2B2B0DA6B9003F5CB0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */; };
+		0D7A7BAE2B0E3BB20019A2E2 /* ChatHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A7BAD2B0E3BB20019A2E2 /* ChatHistoryView.swift */; };
 		0D9CE7CF2B0D6DDE008CB48A /* JohnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */; };
 		13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4B2B0709EB0095E16B /* Users.swift */; };
 		13AB1D4E2B070A400095E16B /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4D2B070A400095E16B /* ModalData.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0D7A7BAD2B0E3BB20019A2E2 /* ChatHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryView.swift; sourceTree = "<group>"; };
 		0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JohnProfileView.swift; sourceTree = "<group>"; };
 		13AB1D4B2B0709EB0095E16B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		13AB1D4D2B070A400095E16B /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */,
 				0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */,
+				0D7A7BAD2B0E3BB20019A2E2 /* ChatHistoryView.swift */,
 				25B368792B06CD92004B48EA /* Assets.xcassets */,
 				25B3687B2B06CD92004B48EA /* Preview Content */,
 				13AB1D4B2B0709EB0095E16B /* Users.swift */,
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25B368782B06CD90004B48EA /* ContentView.swift in Sources */,
+				0D7A7BAE2B0E3BB20019A2E2 /* ChatHistoryView.swift in Sources */,
 				25DC1E732B06DEED003766D1 /* SavedView.swift in Sources */,
 				9D81A9F22B0C319800CE3A48 /* ChatUIView.swift in Sources */,
 				25DC1E6D2B06DDF1003766D1 /* MapView.swift in Sources */,
