@@ -1,89 +1,100 @@
 import SwiftUI
                     
 struct SavedView: View {
-    @State var isUnsavePopupVisible = true
+    @State var isUnsavePopupVisible = false
     
     var body: some View {
-        ScrollView {
-            ZStack {
-                VStack {
-                    HStack {
-                        Text("Saved People")
-                            .font(.title)
-                            .fontWeight(.bold)
+        NavigationView {
+            ScrollView {
+                ZStack {
+                    VStack {
+                        HStack {
+                            Text("Saved People")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .frame(maxWidth: 360, alignment: .leading)
+                                .padding(.top, 20)
+                        }
+                        Divider()
+                            .padding(.bottom, 10)
+                        
+                        Text("Recently Added")
+                            .font(.title3)
                             .frame(maxWidth: 360, alignment: .leading)
-                            .padding(.top, 20)
+                        
+                        NavigationLink(destination: JohnProfileView()) {
+                            savedPerson(
+                                profilePhoto: "John",
+                                name: "John Smith",
+                                jobTitle: "Interaction Designer",
+                                company: "Apple",
+                                industry: "IT"
+                            )
+                        }
+                        NavigationLink(destination: JohnProfileView()){
+                            savedPerson(
+                                profilePhoto: "MaryP",
+                                name: "Mary Pops",
+                                jobTitle: "UX Researcher",
+                                company: "Microsoft",
+                                industry: "IT"
+                            )
+                        }
+                        NavigationLink(destination: JohnProfileView()){
+                            savedPerson(
+                                profilePhoto: "EvaM",
+                                name: "Eva Miller",
+                                jobTitle: "Data Scientist",
+                                company: "Amazon",
+                                industry: "IT"
+                            )
+                        }
+                        NavigationLink(destination: JohnProfileView()){
+                            savedPerson(
+                                profilePhoto: "EvaM",
+                                name: "Eva Miller",
+                                jobTitle: "Data Scientist",
+                                company: "Amazon",
+                                industry: "IT"
+                            )
+                        }
+                        savedPerson(
+                            profilePhoto: "EvaM",
+                            name: "Eva Miller",
+                            jobTitle: "Data Scientist",
+                            company: "Amazon",
+                            industry: "IT"
+                        )
+                        savedPerson(
+                            profilePhoto: "EvaM",
+                            name: "Eva Miller",
+                            jobTitle: "Data Scientist",
+                            company: "Amazon",
+                            industry: "IT"
+                        )
                     }
-                    Divider()
-                        .padding(.bottom, 10)
-                    
-                    Text("Recently Added")
-                        .font(.title3)
-                        .frame(maxWidth: 360, alignment: .leading)
-                    
-                    savedPerson(
-                        profilePhoto: "John",
-                        name: "John Smith",
-                        jobTitle: "Interaction Designer",
-                        company: "Apple",
-                        industry: "IT"
-                    )
-                    savedPerson(
-                        profilePhoto: "MaryP",
-                        name: "Mary Pops",
-                        jobTitle: "UX Researcher",
-                        company: "Microsoft",
-                        industry: "IT"
-                    )
-                    savedPerson(
-                        profilePhoto: "EvaM",
-                        name: "Eva Miller",
-                        jobTitle: "Data Scientist",
-                        company: "Amazon",
-                        industry: "IT"
-                    )
-                    savedPerson(
-                        profilePhoto: "EvaM",
-                        name: "Eva Miller",
-                        jobTitle: "Data Scientist",
-                        company: "Amazon",
-                        industry: "IT"
-                    )
-                    savedPerson(
-                        profilePhoto: "EvaM",
-                        name: "Eva Miller",
-                        jobTitle: "Data Scientist",
-                        company: "Amazon",
-                        industry: "IT"
-                    )
-                    savedPerson(
-                        profilePhoto: "EvaM",
-                        name: "Eva Miller",
-                        jobTitle: "Data Scientist",
-                        company: "Amazon",
-                        industry: "IT"
-                    )
-                }
-//                .background(
-//                    Color.black.opacity(0.3).edgesIgnoringSafeArea(.all)
-//                    .onTapGesture {
-//                        isUnsavePopupVisible = false
-//                    }
-//                )
-                if isUnsavePopupVisible {
-                    UnsavePopup {
-                        isUnsavePopupVisible.toggle()
-                        print("User Unsaved")
-                        
-                        //SharedData.Alver.toggle()
-                        
-                    } onCancel: {
-                        isUnsavePopupVisible.toggle()
-                        print("Unsave Cancelled")
+    //                .background(
+    //                    Color.black.opacity(0.3).edgesIgnoringSafeArea(.all)
+    //                    .onTapGesture {
+    //                        isUnsavePopupVisible = false
+    //                    }
+    //                )
+                    if isUnsavePopupVisible {
+                        UnsavePopup {
+                            isUnsavePopupVisible.toggle()
+                            print("User Unsaved")
+                            
+                            //SharedData.Alver.toggle()
+                            
+                        } onCancel: {
+                            isUnsavePopupVisible.toggle()
+                            print("Unsave Cancelled")
+                        }
                     }
                 }
             }
         }
+        
     }
 }
 
@@ -98,20 +109,28 @@ func savedPerson (profilePhoto: String, name: String, jobTitle: String, company:
             .fill(Color.white)
             .frame(width: 370, height: 150)
         HStack {
-            Image(profilePhoto)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100)
-                .clipShape(Circle())
+                Image(profilePhoto)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100)
+                    .clipShape(Circle())
             VStack {
                 Text(name)
                     .font(.title2)
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
                     .frame(maxWidth: 200, alignment: .leading)
-                Text(jobTitle + "\n" + "at " + company)
+                Text(jobTitle)
                     .font(.subheadline)
                     .frame(maxWidth: 200, alignment: .leading)
                     .padding(.bottom, 5)
+                    .foregroundColor(.black)
+                Text("at " + company)
+                    .font(.subheadline)
+                    .frame(maxWidth: 200, alignment: .leading)
+                    .padding(.top, -10)
+                    .padding(.bottom, 5)
+                    .foregroundColor(.black)
                 Text(industry)
                     .font(.subheadline)
                     .fontWeight(.bold)
