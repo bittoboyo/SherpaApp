@@ -1,15 +1,8 @@
 import SwiftUI
-
-
-class SharedData: ObservableObject {
-    @Published var Alver = false
-}
-                    
                     
 struct SavedView: View {
-    @State private var isUnsavePopupVisible = false
-    //@EnvironmentObject private var isUnsavePopupVisible: Bool
-
+    @State var isUnsavePopupVisible = true
+    
     var body: some View {
         ScrollView {
             ZStack {
@@ -89,8 +82,6 @@ struct SavedView: View {
                         print("Unsave Cancelled")
                     }
                 }
-                
-                //if toggleState{ Text("Changed")}
             }
         }
     }
