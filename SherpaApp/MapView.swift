@@ -47,7 +47,7 @@ struct MapView: View {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
                         Button("☕️") {
-                            checkInList = true
+//                            checkInList = true
                         }
                         .padding(5)
                         Circle()
@@ -65,7 +65,7 @@ struct MapView: View {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
                         Button("📚") {
-                            checkInList = true
+//                            checkInList = true
                         }
                         .padding(5)
                         Circle()
@@ -83,7 +83,7 @@ struct MapView: View {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
                         Button("🏨") {
-                            checkInList = true
+//                            checkInList = true
                         }
                         .padding(5)
                         Circle()
@@ -101,7 +101,7 @@ struct MapView: View {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
                         Button("🎮") {
-                            checkInList = true
+//                            checkInList = true
                         }
                         .padding(5)
                         Circle()
@@ -124,6 +124,8 @@ struct MapView: View {
             .onAppear {
                 CLLocationManager().requestWhenInUseAuthorization()
             }
+            .offset(y:75)
+            
             
             HeaderView()
 
@@ -148,7 +150,7 @@ struct MapView: View {
                     PeopleView()
                         .frame(width: rectangleWidth, height: rectangleHeight)
                         .offset(offset)
-                        .position(x: rectangleWidth/2, y: rectangleHeight + 18)
+                        .position(x: rectangleWidth/2, y: rectangleHeight + 36)
 
                 }
             }
