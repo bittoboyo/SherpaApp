@@ -11,16 +11,15 @@ extension AnyTransition {
 }
 
 struct MapView: View {
-    
     @StateObject var manager = LocationManager()
 
     @State var checkInList = false
     private let rectangleHeight: CGFloat = 852
     private let rectangleWidth: CGFloat = 393
     @State private var pos = CGPoint(x: 100, y: 100)
-    
     @State private var offset = CGSize.zero
     
+    @State private var vibrateOnRing = true
     
     var body: some View {
         ZStack{
@@ -29,10 +28,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("☕️") {
+                            .frame(width:35,height:35)
+                        Button{
                             checkInList = true
+                        } label: {
+                            Image(systemName: "cup.and.saucer.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -40,6 +43,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -47,10 +51,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("☕️") {
-                            checkInList = true
+                            .frame(width:35,height:35)
+                        Button {
+//                            checkInList = true
+                        } label: {
+                            Image(systemName: "cup.and.saucer.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+                        
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -58,6 +66,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -65,10 +74,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("📚") {
-                            checkInList = true
+                            .frame(width:35,height:35)
+                        Button {
+//                            checkInList = true
+                        } label: {
+                            Image(systemName: "book.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+                        
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -76,6 +89,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -83,10 +97,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("🏨") {
-                            checkInList = true
+                            .frame(width:35,height:35)
+                        Button {
+//                            checkInList = true
+                        }label: {
+                            Image(systemName: "building.2.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -94,6 +112,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -101,10 +120,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("🎮") {
-                            checkInList = true
+                            .frame(width:35,height:35)
+                        Button {
+//                            checkInList = true
+                        }label: {
+                            Image(systemName: "gamecontroller.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -112,6 +135,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
             }
@@ -125,6 +149,20 @@ struct MapView: View {
             .onAppear {
                 CLLocationManager().requestWhenInUseAuthorization()
             }
+            .offset(y:75)
+            
+            
+            HeaderView()
+            
+            VStack(alignment:.leading){
+                Text("Auto Check-in")
+                Toggle(isOn: $vibrateOnRing) {
+                }
+                    .offset(x:-340)
+            }
+            .frame(width:.infinity, height:200)
+            .offset(x:10,y:-240)
+
 
             if checkInList == true{
             //overlay screen for check-in member list
@@ -147,7 +185,7 @@ struct MapView: View {
                     PeopleView()
                         .frame(width: rectangleWidth, height: rectangleHeight)
                         .offset(offset)
-                        .position(x: rectangleWidth/2, y: rectangleHeight + 18)
+                        .position(x: rectangleWidth/2, y: rectangleHeight + 36)
 
                 }
             }
@@ -158,10 +196,10 @@ struct MapView: View {
         .onChanged {
             value in
             @State var rectY = value.startLocation.y + value.translation.height
-            if rectY < 200 && rectY > -400{
+            if rectY < 210 && rectY > -450{
                 offset = CGSize(width: 0, height: rectY)
             }
-            else if rectY >= 200{
+            else if rectY >= 210{
                 checkInList = false
             }
         }

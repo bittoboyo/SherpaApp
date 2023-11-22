@@ -8,6 +8,14 @@ struct UserProfileView: View {
 
     NavigationView{
         VStack {
+            Text("Profile")
+                .font(.title)
+                .fontWeight(.bold)
+                .frame(maxWidth: 360, alignment: .leading)
+                .padding(.top, 20)
+            Divider()
+                .padding(.bottom, 10)
+            
             //Profile picture
             Image("Sam")
                 .resizable()
