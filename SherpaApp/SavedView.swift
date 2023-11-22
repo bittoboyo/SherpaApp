@@ -8,13 +8,11 @@ struct SavedView: View {
             ScrollView {
                 ZStack {
                     VStack {
-                        HStack {
-                            Text("Saved People")
-                                .font(.title)
-                                .fontWeight(.bold)
-                                .frame(maxWidth: 360, alignment: .leading)
-                                .padding(.top, 20)
-                        }
+                        Text("Saved People")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .frame(maxWidth: 360, alignment: .leading)
+                            .padding(.top, 20)
                         Divider()
                             .padding(.bottom, 10)
                         

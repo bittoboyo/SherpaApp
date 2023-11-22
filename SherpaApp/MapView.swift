@@ -28,10 +28,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("☕️") {
+                            .frame(width:35,height:35)
+                        Button{
                             checkInList = true
+                        } label: {
+                            Image(systemName: "cup.and.saucer.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -39,6 +43,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -46,10 +51,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("☕️") {
+                            .frame(width:35,height:35)
+                        Button {
 //                            checkInList = true
+                        } label: {
+                            Image(systemName: "cup.and.saucer.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+                        
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -57,6 +66,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -64,10 +74,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("📚") {
+                            .frame(width:35,height:35)
+                        Button {
 //                            checkInList = true
+                        } label: {
+                            Image(systemName: "book.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+                        
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -75,6 +89,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -82,10 +97,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("🏨") {
+                            .frame(width:35,height:35)
+                        Button {
 //                            checkInList = true
+                        }label: {
+                            Image(systemName: "building.2.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -93,6 +112,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
                 
@@ -100,10 +120,14 @@ struct MapView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 5)
                             .fill(.blue)
-                        Button("🎮") {
+                            .frame(width:35,height:35)
+                        Button {
 //                            checkInList = true
+                        }label: {
+                            Image(systemName: "gamecontroller.fill")
+                                .foregroundStyle(.white)
                         }
-                        .padding(5)
+
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
@@ -111,6 +135,7 @@ struct MapView: View {
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
+                            .padding(5)
                     }
                 }
             }

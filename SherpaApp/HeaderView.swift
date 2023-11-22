@@ -10,7 +10,7 @@ struct HeaderView: View {
             
             HStack {
                 Text("Sherpa")
-                    .font(.title)
+                    .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
                 Spacer()
