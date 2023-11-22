@@ -142,10 +142,10 @@ class ChatViewModel: ObservableObject {
             
         }
     }
-
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatView()
-        
+    
+    struct ChatView_Previews: PreviewProvider {
+        static var previews: some View {
+            ChatView()
         }
     }
+
