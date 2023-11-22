@@ -9,6 +9,7 @@ struct ContentView: View {
                         .tabItem {
                             Label("Explore", systemImage: "map")
                         }
+                
                     ChatHistoryView()
                         .tabItem {
                             Label("Chats",systemImage: "message.fill")

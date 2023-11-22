@@ -9,41 +9,43 @@ import SwiftUI
 
 struct ChatHistoryView: View {
     var body: some View {
-        VStack {
-            Text("Chats")
-                .font(.title)
-                .fontWeight(.bold)
-                .frame(maxWidth: 360, alignment: .leading)
-                .padding(.top, 20)
-            Divider()
-                .padding(.bottom, 10)
-            
- 
-            NavigationLink(destination: ChatView()){
-                chatHistory(
-                    profilePhoto: "John",
-                    name: "John Smith",
-                    status: "Nice to meet you :D · now",
-                    industry: "IT"
-                )
+        NavigationView {
+            VStack {
+                Text("Chats")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .frame(maxWidth: 360, alignment: .leading)
+                    .padding(.top, 20)
+                Divider()
+                    .padding(.bottom, 10)
+                
+                
+                NavigationLink(destination: ChatView()){
+                    chatHistory(
+                        profilePhoto: "John",
+                        name: "John Smith",
+                        status: "Nice to meet you :D · now",
+                        industry: "IT"
+                    )
+                }
+                NavigationLink(destination: ChatView()){
+                    chatHistory(
+                        profilePhoto: "MaryP",
+                        name: "Mary Pops",
+                        status: "What are you working on? · 48m",
+                        industry: "IT"
+                    )
+                }
+                NavigationLink(destination: ChatView()){
+                    chatHistory(
+                        profilePhoto: "EvaM",
+                        name: "Eva Miller",
+                        status: "Wanna grab coffee? · 10:23am",
+                        industry: "IT"
+                    )
+                }
+                Spacer()
             }
-            NavigationLink(destination: ChatView()){
-                chatHistory(
-                    profilePhoto: "MaryP",
-                    name: "Mary Pops",
-                    status: "What are you working on? · 48m",
-                    industry: "IT"
-                )
-            }
-            NavigationLink(destination: ChatView()){
-                chatHistory(
-                    profilePhoto: "EvaM",
-                    name: "Eva Miller",
-                    status: "Wanna grab coffee? · 10:23am",
-                    industry: "IT"
-                )
-            }
-            Spacer()
         }
     }
 }
