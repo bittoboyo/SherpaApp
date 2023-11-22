@@ -1,7 +1,15 @@
 import SwiftUI
 
+
+class SharedData: ObservableObject {
+    @Published var Alver = false
+}
+                    
+                    
 struct SavedView: View {
-    @State var isUnsavePopupVisible = true
+    @State private var isUnsavePopupVisible = false
+    //@EnvironmentObject private var isUnsavePopupVisible: Bool
+
     var body: some View {
         ScrollView {
             ZStack {
@@ -73,18 +81,26 @@ struct SavedView: View {
                     UnsavePopup {
                         isUnsavePopupVisible.toggle()
                         print("User Unsaved")
+                        
+                        //SharedData.Alver.toggle()
+                        
                     } onCancel: {
                         isUnsavePopupVisible.toggle()
                         print("Unsave Cancelled")
                     }
                 }
+                
+                //if toggleState{ Text("Changed")}
             }
         }
     }
 }
 
 func savedPerson (profilePhoto: String, name: String, jobTitle: String, company: String, industry: String) -> some View {
+    //@Binding var isToggled: Bool
     @State var isUnsavePopupVisible = true
+    
+    
     return ZStack {
         RoundedRectangle(cornerRadius: 20)
             .stroke(.gray, lineWidth: 1)
@@ -116,6 +132,7 @@ func savedPerson (profilePhoto: String, name: String, jobTitle: String, company:
             }
             Button {
                 isUnsavePopupVisible.toggle()
+                //isToggled.toggle()
             } label: {
                 Image(systemName: "bookmark.fill")
                     .resizable()
@@ -145,6 +162,8 @@ struct UnsavePopup: View {
                         HStack {
                             Button("OK  ") {
                                 onOK()
+                                //isUnsavePopupVisible.toggle()
+
                             }
                             .foregroundColor(.blue)
                             .cornerRadius(10)
