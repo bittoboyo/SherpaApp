@@ -11,7 +11,6 @@ extension AnyTransition {
 }
 
 struct MapView: View {
-    
     @StateObject var manager = LocationManager()
 
     @State var checkInList = false
@@ -125,6 +124,8 @@ struct MapView: View {
             .onAppear {
                 CLLocationManager().requestWhenInUseAuthorization()
             }
+            
+            HeaderView()
 
             if checkInList == true{
             //overlay screen for check-in member list
