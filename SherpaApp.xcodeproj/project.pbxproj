@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0D0CDE2B2B0DA6B9003F5CB0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */; };
+		0D3276572B0ECBD80079F172 /* EpicCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3276562B0ECBD80079F172 /* EpicCoffeeView.swift */; };
+		0D3276592B0ECBE60079F172 /* FortressSydneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3276582B0ECBE60079F172 /* FortressSydneyView.swift */; };
+		0D32765B2B0ECBF60079F172 /* SydneyLocalLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32765A2B0ECBF60079F172 /* SydneyLocalLibraryView.swift */; };
+		0D32765D2B0ECC040079F172 /* HotelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32765C2B0ECC040079F172 /* HotelView.swift */; };
 		0D9CE7CF2B0D6DDE008CB48A /* JohnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */; };
 		13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4B2B0709EB0095E16B /* Users.swift */; };
 		13AB1D4E2B070A400095E16B /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4D2B070A400095E16B /* ModalData.swift */; };
@@ -46,6 +50,10 @@
 
 /* Begin PBXFileReference section */
 		0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0D3276562B0ECBD80079F172 /* EpicCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicCoffeeView.swift; sourceTree = "<group>"; };
+		0D3276582B0ECBE60079F172 /* FortressSydneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortressSydneyView.swift; sourceTree = "<group>"; };
+		0D32765A2B0ECBF60079F172 /* SydneyLocalLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SydneyLocalLibraryView.swift; sourceTree = "<group>"; };
+		0D32765C2B0ECC040079F172 /* HotelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelView.swift; sourceTree = "<group>"; };
 		0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JohnProfileView.swift; sourceTree = "<group>"; };
 		13AB1D4B2B0709EB0095E16B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		13AB1D4D2B070A400095E16B /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
@@ -127,6 +135,10 @@
 				25B368752B06CD90004B48EA /* SherpaAppApp.swift */,
 				0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */,
 				0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */,
+				0D32765C2B0ECC040079F172 /* HotelView.swift */,
+				0D3276562B0ECBD80079F172 /* EpicCoffeeView.swift */,
+				0D3276582B0ECBE60079F172 /* FortressSydneyView.swift */,
+				0D32765A2B0ECBF60079F172 /* SydneyLocalLibraryView.swift */,
 				25B368792B06CD92004B48EA /* Assets.xcassets */,
 				25B3687B2B06CD92004B48EA /* Preview Content */,
 				13AB1D4B2B0709EB0095E16B /* Users.swift */,
@@ -294,7 +306,9 @@
 				25DC1E732B06DEED003766D1 /* SavedView.swift in Sources */,
 				9D81A9F22B0C319800CE3A48 /* ChatUIView.swift in Sources */,
 				25DC1E6D2B06DDF1003766D1 /* MapView.swift in Sources */,
+				0D3276592B0ECBE60079F172 /* FortressSydneyView.swift in Sources */,
 				9DB216672B0AFBE300E4D864 /* UserRow.swift in Sources */,
+				0D3276572B0ECBD80079F172 /* EpicCoffeeView.swift in Sources */,
 				25DC1E772B0711FA003766D1 /* LocationManager.swift in Sources */,
 				25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */,
 				25DC1E752B06DEF5003766D1 /* UserProfileView.swift in Sources */,
@@ -302,6 +316,8 @@
 				13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */,
 				13AB1D4E2B070A400095E16B /* ModalData.swift in Sources */,
 				0D9CE7CF2B0D6DDE008CB48A /* JohnProfileView.swift in Sources */,
+				0D32765B2B0ECBF60079F172 /* SydneyLocalLibraryView.swift in Sources */,
+				0D32765D2B0ECC040079F172 /* HotelView.swift in Sources */,
 				0D0CDE2B2B0DA6B9003F5CB0 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
