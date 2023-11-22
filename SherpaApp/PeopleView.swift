@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct PeopleView: View {
+    @State var map = MapView()
+    
     var body: some View {
         ScrollView {
             VStack {
@@ -19,7 +21,6 @@ struct PeopleView: View {
                             .scaledToFit()
                             .frame(width: 40)
                             .offset(x: -20, y: 10)
-                        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }
                 }
                 Divider()

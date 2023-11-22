@@ -13,6 +13,10 @@ extension AnyTransition {
 struct MapView: View {
     
     @StateObject var manager = LocationManager()
+    @State private var route: MKRoute?
+    @State private var travelTime: String?
+//        private let gradient = LinearGradient(colors: [.red, .orange], startPoint: .leading, endPoint: .trailing)
+//        private let stroke = StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round, dash: [8, 8])
 
     @State var checkInList = false
     private let rectangleHeight: CGFloat = 852
@@ -145,6 +149,10 @@ struct MapView: View {
                         .offset(offset)
                         .gesture(dragGesture)
                         .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
+                    
+                    PeopleView()
+                        .frame(maxHeight: 400)
+                        .offset(y: 270)
                 }
             }
         }
@@ -180,4 +188,27 @@ extension CLLocationCoordinate2D {
     static let sydneyLibrary = CLLocationCoordinate2D(latitude: -33.884569732024154, longitude: 151.19709903919133)
     static let abercrombieHotel = CLLocationCoordinate2D(latitude: -33.8874295, longitude: 151.1986847)
     static let fortressSydney = CLLocationCoordinate2D(latitude: -33.88461644233929, longitude: 151.20067320728768)
+}
+
+extension MapView {
+    private func fetchRouteFrom(_ source: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D) {
+        let request = MKDirections.Request()
+        request.source = MKMapItem(placemark: MKPlacemark(coordinate: source))
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: destination))
+        request.transportType = .walking
+        
+        Task {
+            let result = try? await MKDirections(request: request).calculate()
+            route = result?.routes.first
+            getTravelTime()
+        }
+    }
+    
+    private func getTravelTime() {
+        guard let route else { return }
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .abbreviated
+        formatter.allowedUnits = [.hour, .minute]
+        travelTime = formatter.string(from: route.expectedTravelTime)
+    }
 }
