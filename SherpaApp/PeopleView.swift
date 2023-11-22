@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct PeopleView: View {
-    @State var map = MapView()
-    
     var body: some View {
         ScrollView {
             VStack {
