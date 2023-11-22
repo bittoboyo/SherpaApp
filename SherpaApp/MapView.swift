@@ -151,8 +151,10 @@ struct MapView: View {
                         .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
                     
                     PeopleView()
-                        .frame(maxHeight: 400)
-                        .offset(y: 270)
+                        .frame(width: rectangleWidth, height: rectangleHeight)
+                        .offset(offset)
+                        .position(x: rectangleWidth/2, y: rectangleHeight + 18)
+
                 }
             }
         }
