@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct PeopleView: View {
+    @State private var favoriteColor = "All"
+       var colors = ["All", "Industry"]
     var body: some View {
         ScrollView {
             VStack {
@@ -24,9 +26,12 @@ struct PeopleView: View {
                 Divider()
                     .padding(.bottom, 10)
                 
-                Text("Recently Added")
-                    .font(.title3)
-                    .frame(maxWidth: 360, alignment: .leading)
+                Picker("", selection: $favoriteColor) {
+                                ForEach(colors, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                            .pickerStyle(.segmented)
                 
                 listPeople(
                     profilePhoto: "John",
