@@ -8,13 +8,11 @@ struct UserProfileView: View {
 
     NavigationView{
         VStack {
-
-            
             //Profile picture
-            Image("John")
+            Image("Sam")
                 .resizable()
                 .scaledToFit()
-                .frame(height: 125)
+                .frame(width:125)
                 .clipShape(Circle())
      
                 //Name and industry
@@ -85,21 +83,22 @@ struct UserProfileView: View {
                     Button{
                         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }label:{
-                        HStack{
-                            Image(systemName: "square.and.arrow.up.fill")
-                                .imageScale(.medium)
-                                .foregroundColor(.blue)
-                            
-                            Text("Share Profile")
-                                .foregroundColor(.blue)
-                                .font(.headline)
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                     .stroke(.blue, lineWidth: 1)
+                                     .fill(Color.white)
+                                     .frame(width: 150, height: 30)
+                                     .background(.white)
+                            HStack{
+                                Image(systemName: "square.and.arrow.up.fill")
+                                    .imageScale(.medium)
+                                    .foregroundColor(.blue)
+                                
+                                Text("Share Profile")
+                                    .foregroundColor(.blue)
+                                    .font(.headline)
+                            }
                         }
-                        .frame(width: 150, height: 30)
-                        
-                        .cornerRadius(15)
-                        .border(.blue)
-                        .background(.white)
-                        
                     }
                 }
                 
@@ -155,7 +154,8 @@ struct UserProfileView: View {
                 .padding(.horizontal, 30)
                 .padding(.vertical, 5)
                 Divider()
-                //Education
+                
+            //Education
                 VStack{
                     Text("Education")
                         .font(.system(.body))
