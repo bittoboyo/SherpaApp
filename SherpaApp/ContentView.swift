@@ -5,18 +5,20 @@ struct ContentView: View {
         
         ZStack {
                 TabView {
-                    SavedView()
-                        .tabItem {
-                            Label("Saved", systemImage: "bookmark")
-                        }
                     MapView()
                         .tabItem {
                             Label("Explore", systemImage: "map")
                         }
-                    ChatView()
+                
+                    ChatHistoryView()
                         .tabItem {
-                            Label("Chat",systemImage: "message.fill")
+                            Label("Chats",systemImage: "message.fill")
                         }
+                    SavedView()
+                        .tabItem {
+                            Label("Saved", systemImage: "bookmark")
+                        }
+
                     UserProfileView()
                         .tabItem {
                             Label("Profile", systemImage: "person.crop.circle.fill")
