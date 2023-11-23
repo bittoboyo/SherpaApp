@@ -2,7 +2,6 @@ import SwiftUI
 
 struct UserProfileView: View {
     @Environment(\.openURL) var openURL
-    @State private var isBookmarked = false
     
     var body: some View {
 
