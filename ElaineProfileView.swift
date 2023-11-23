@@ -78,7 +78,8 @@ struct ElaineProfileView: View {
                     //Send Message button
                     VStack {
                         Button{
-                            /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+//                            NavigationLink(destination:ChatView()){}
+                            
                         }label:{
                             HStack{
                                 Image(systemName: "paperplane.fill")
