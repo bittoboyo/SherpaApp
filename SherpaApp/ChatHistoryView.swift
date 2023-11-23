@@ -22,8 +22,8 @@ struct ChatHistoryView: View {
                 
                 NavigationLink(destination: ChatUIView()){
                     chatHistory(
-                        profilePhoto: "John",
-                        name: "John Smith",
+                        profilePhoto: "Sunny",
+                        name: "Sunny Wong",
                         status: "Hi, how are you? · now",
                         industry: "IT"
                     )
