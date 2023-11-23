@@ -181,7 +181,7 @@ struct AlverProfileView: View {
                     Divider()
                     //Check LinkedIn Profile Button
                     Button{
-                        openURL(URL(string: "https://au.linkedin.com")!)
+                        openURL(URL(string: "https://www.linkedin.com/in/alver-remolar-4a3b36101/")!)
                     }label: {
                         HStack{
                             Text("Check LinkedIn Profile")

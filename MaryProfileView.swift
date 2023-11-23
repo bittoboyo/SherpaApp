@@ -52,7 +52,7 @@ struct MaryProfileView: View {
                     
                     //Skills
                     HStack{
-                        Text("html")
+                        Text("Lean UX")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
@@ -103,7 +103,7 @@ struct MaryProfileView: View {
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding(.horizontal,10)
                         
-                        Text("The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!")
+                        Text("Music aficionado building playlists. What's the song that defines your current mood or vibe?")
                         //                        .frame(width: 180, height: 50)
                             .font(.system(.body))
                         //                    .foregroundColor(.black)

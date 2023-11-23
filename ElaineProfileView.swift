@@ -46,27 +46,27 @@ struct ElaineProfileView: View {
                     }
                     
                     //Job position and company
-                    Text("Data Scientis at Llamazon")
+                    Text("Data Scientist at Llamazon")
                         .font(.title2)
                         .foregroundColor(.black)
                     
                     //Skills
                     HStack{
-                        Text("html")
+                        Text("Python")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
                             .background(Color(red:0.9,green:0.9,blue:0.9))
                             .cornerRadius(5)
                         
-                        Text("Figma")
+                        Text("scikit-Learn")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
                             .background(Color(red:0.9,green:0.9,blue:0.9))
                             .cornerRadius(5)
                         
-                        Text("Proj Mgt")
+                        Text("Tableau")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
@@ -104,7 +104,7 @@ struct ElaineProfileView: View {
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding(.horizontal,10)
                         
-                        Text("The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!")
+                        Text("Tech conference junkie 🎤 | Let's discuss our favorite conference moments. What's yours?")
                         //                        .frame(width: 180, height: 50)
                             .font(.system(.body))
                         //                    .foregroundColor(.black)

@@ -203,7 +203,9 @@ func listPeople(profilePhoto: String,
                     .font(.footnote)
                     .frame(width: 230, alignment: .leading)
                     .padding(.bottom, 5)
+                    
             }
+            
 //            Button {
 //             } label: {
 //                 Image(systemName: "chevron.right")

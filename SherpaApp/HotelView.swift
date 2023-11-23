@@ -4,7 +4,7 @@ struct HotelView: View {
     @State private var favoriteColor = "All"
        var colors = ["All", "Industry"]
     var body: some View {
-    NavigationView{
+    NavigationStack{
         VStack {
             HStack {
                 VStack{
@@ -56,7 +56,7 @@ struct HotelView: View {
                                 skill: "ChatGPT",
                                 skill1: "Midjourney",
                                 skill2: "Lang Model",
-                                description: "“Passionate in exploring the endless possibilities of AI. Let's meet at Abercrombie Hotel! 🚀”"
+                                description: "“Passionate about AI. Let's meet! 🚀”"
                             )
                             .foregroundColor(.black)
                         }

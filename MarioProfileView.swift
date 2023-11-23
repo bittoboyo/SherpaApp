@@ -52,14 +52,14 @@ struct MarioProfileView: View {
                     
                     //Skills
                     HStack{
-                        Text("html")
+                        Text("Marketing")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
                             .background(Color(red:0.9,green:0.9,blue:0.9))
                             .cornerRadius(5)
                         
-                        Text("Figma")
+                        Text("Feasibs")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
@@ -103,7 +103,7 @@ struct MarioProfileView: View {
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding(.horizontal,10)
                         
-                        Text("The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!")
+                        Text("Fitness fanatic embracing new workouts. Any exercise routines or fitness goals you're passionate about?")
                         //                        .frame(width: 180, height: 50)
                             .font(.system(.body))
                         //                    .foregroundColor(.black)
