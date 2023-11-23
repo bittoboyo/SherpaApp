@@ -9,13 +9,17 @@ struct HeaderView: View {
                 .shadow(radius: 3)
             
             HStack {
+                Image("Sherpa_Logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width:40)
                 Text("Sherpa")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(Color.black)
                 Spacer()
             }
-            .padding(.horizontal,18)
+            .padding(.horizontal,25)
             .padding(.top, 75)
         }
         .position(x:195)

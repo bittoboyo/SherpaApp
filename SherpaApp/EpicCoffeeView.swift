@@ -16,7 +16,7 @@ struct EpicCoffeeView: View {
                     HStack{
                         Image(systemName: "figure.walk")
                             .font(.body)
-                        Text("15 mins walk")
+                        Text("3 mins walk")
                             .font(.body)
                             .frame(maxWidth: 360, alignment: .leading)
                     }

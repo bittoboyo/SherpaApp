@@ -16,7 +16,7 @@ struct SydneyLocalLibraryView: View {
                     HStack{
                         Image(systemName: "figure.walk")
                             .font(.body)
-                        Text("5 mins walk")
+                        Text("1 min walk")
                             .font(.body)
                             .frame(maxWidth: 360, alignment: .leading)
                     }
