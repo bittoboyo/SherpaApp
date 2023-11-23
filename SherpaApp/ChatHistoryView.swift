@@ -20,15 +20,15 @@ struct ChatHistoryView: View {
                     .padding(.bottom, 10)
                 
                 
-                NavigationLink(destination: ChatView()){
+                NavigationLink(destination: ChatUIView()){
                     chatHistory(
                         profilePhoto: "John",
                         name: "John Smith",
-                        status: "Nice to meet you :D · now",
+                        status: "Hi, how are you? · now",
                         industry: "IT"
                     )
                 }
-                NavigationLink(destination: ChatView()){
+                NavigationLink(destination: ChatUIView()){
                     chatHistory(
                         profilePhoto: "MaryP",
                         name: "Mary Pops",
@@ -36,7 +36,7 @@ struct ChatHistoryView: View {
                         industry: "IT"
                     )
                 }
-                NavigationLink(destination: ChatView()){
+                NavigationLink(destination: ChatUIView()){
                     chatHistory(
                         profilePhoto: "EvaM",
                         name: "Eva Miller",
