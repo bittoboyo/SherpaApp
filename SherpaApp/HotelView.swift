@@ -62,8 +62,8 @@ struct HotelView: View {
                         }
                         
                         listPeople(
-                            profilePhoto: "EvaM",
-                            name: "Alex Harper",
+                            profilePhoto: "GabrielT",
+                            name: "Gabriel Turner",
                             occupation: "Graphic Designer at PixelCraft Studios",
                             industry: "Design",
                             skill: "Adobe Creative Cloud",
@@ -72,7 +72,7 @@ struct HotelView: View {
                             description: "“Illustrating ideas from a distance.”"
                         )
                             listPeople(
-                                profilePhoto: "John",
+                                profilePhoto: "CaseyB",
                                 name: "Casey Baker",
                                 occupation: "Financial Analyst at BudgetMinds LLC",
                                 industry: "Finance",
@@ -83,8 +83,8 @@ struct HotelView: View {
                             )
 
                         listPeople(
-                            profilePhoto: "MaryP",
-                                name: "Samuel Turner",
+                            profilePhoto: "AlexH",
+                                name: "Alex Harper",
                             occupation: "Online Therapist at SereneMind Counseling",
                             industry: "Counseling",
                             skill: "Teletherapy",
@@ -103,7 +103,7 @@ struct HotelView: View {
                                 skill: "ChatGPT",
                                 skill1: "Midjourney",
                                 skill2: "Lang Model",
-                                description: "“Passionate in exploring the endless possibilities of AI. Let's meet at Abercrombie Hotel! 🚀”"
+                                description: "“Passionate about AI. Let's meet! 🚀”"
                             )
                     }
                     Rectangle()
