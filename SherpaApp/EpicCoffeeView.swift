@@ -58,14 +58,14 @@ struct EpicCoffeeView: View {
                             description: "“Consultant in a different timezone, studying Mathematics and Quantitative Finance, searching for problems to solve in every one.”"
                         )
                         listPeople(
-                            profilePhoto: "AliceJ",
-                            name: "Alice Johnson",
-                            occupation: "Marketing Specialist at Banana Company",
-                            industry: "Marketing",
-                            skill: "Content Creation",
-                            skill1: "Management",
-                            skill2: "SEO",
-                            description: "“Passionate about creating engaging content and building strong online communities.”"
+                            profilePhoto: "XuanZ",
+                            name: "Xuan Zhang",
+                            occupation: "UI/UX Designer at UTS",
+                            industry: "IT",
+                            skill: "StoryTelling",
+                            skill1: "Research",
+                            skill2: "Figma",
+                            description: "“Love talking to people! Passionate in enhacing people's experience in daily basis.”"
                         )
                 
                             listPeople(

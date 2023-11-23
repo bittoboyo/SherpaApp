@@ -15,6 +15,7 @@
 		1313F7A92B0EF466007A68A8 /* HotelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7A82B0EF466007A68A8 /* HotelView.swift */; };
 		1313F7AB2B0EF487007A68A8 /* FortressSydneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7AA2B0EF487007A68A8 /* FortressSydneyView.swift */; };
 		1313F7AD2B0EF4B9007A68A8 /* SydneyLocalLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7AC2B0EF4B9007A68A8 /* SydneyLocalLibraryView.swift */; };
+		1313F7B92B0F6ED2007A68A8 /* XuanProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7B82B0F6ED2007A68A8 /* XuanProfileView.swift */; };
 		13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4B2B0709EB0095E16B /* Users.swift */; };
 		13AB1D4E2B070A400095E16B /* ModalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AB1D4D2B070A400095E16B /* ModalData.swift */; };
 		25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B368752B06CD90004B48EA /* SherpaAppApp.swift */; };
@@ -66,6 +67,7 @@
 		1313F7A82B0EF466007A68A8 /* HotelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelView.swift; sourceTree = "<group>"; };
 		1313F7AA2B0EF487007A68A8 /* FortressSydneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortressSydneyView.swift; sourceTree = "<group>"; };
 		1313F7AC2B0EF4B9007A68A8 /* SydneyLocalLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SydneyLocalLibraryView.swift; sourceTree = "<group>"; };
+		1313F7B82B0F6ED2007A68A8 /* XuanProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XuanProfileView.swift; sourceTree = "<group>"; };
 		13AB1D4B2B0709EB0095E16B /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		13AB1D4D2B070A400095E16B /* ModalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalData.swift; sourceTree = "<group>"; };
 		25B368722B06CD90004B48EA /* SherpaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SherpaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 		25B368692B06CD90004B48EA = {
 			isa = PBXGroup;
 			children = (
+				1313F7B82B0F6ED2007A68A8 /* XuanProfileView.swift */,
 				0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */,
 				82F6A6592B0F1828007D6658 /* AlverProfileView.swift */,
 				82F6A6552B0EDFBF007D6658 /* MarioProfileView.swift */,
@@ -353,6 +356,7 @@
 				82F6A6542B0EDEFC007D6658 /* ZiProfileView.swift in Sources */,
 				0D9CE7CF2B0D6DDE008CB48A /* JohnProfileView.swift in Sources */,
 				1313F7A72B0EF441007A68A8 /* EpicCoffeeView.swift in Sources */,
+				1313F7B92B0F6ED2007A68A8 /* XuanProfileView.swift in Sources */,
 				1313F7AD2B0EF4B9007A68A8 /* SydneyLocalLibraryView.swift in Sources */,
 				0D0CDE2B2B0DA6B9003F5CB0 /* HeaderView.swift in Sources */,
 			);
