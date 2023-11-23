@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SunnyProfileView: View {
     @Environment(\.openURL) var openURL
-    @State public var isBookmarked = true
+    @State public var isBookmarked = false
     
     var body: some View {
     NavigationView{
@@ -214,7 +214,7 @@ struct SunnyProfileView: View {
                         }
                     }
                     Rectangle()
-                        .frame(width:.infinity,height: 300)
+                        .frame(width:.infinity,height: 200)
                         .foregroundStyle(.white)
                 }
                 .offset(y:-20)

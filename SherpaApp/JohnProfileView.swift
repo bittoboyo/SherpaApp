@@ -9,7 +9,7 @@ import SwiftUI
 
 struct JohnProfileView: View {
     @Environment(\.openURL) var openURL
-    @State public var isBookmarked = false
+    @State public var isBookmarked = true
     
     var body: some View {
     NavigationView{
