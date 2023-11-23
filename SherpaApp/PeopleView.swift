@@ -16,7 +16,7 @@ struct PeopleView: View {
                     HStack{
                         Image(systemName: "figure.walk")
                             .font(.body)
-                        Text("7 mins walk")
+                        Text("10 mins walk")
                             .font(.body)
                             .frame(maxWidth: 360, alignment: .leading)
                     }
