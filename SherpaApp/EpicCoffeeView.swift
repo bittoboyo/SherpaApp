@@ -1,18 +1,152 @@
-//
-//  EpicCoffeeView.swift
-//  SherpaApp
-//
-//  Created by Yu Ching Wong on 23/11/2023.
-//
-
 import SwiftUI
 
 struct EpicCoffeeView: View {
+    @State private var favoriteColor = "All"
+       var colors = ["All", "Industry"]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    NavigationView{
+        VStack {
+            HStack {
+                VStack{
+                    Text("Epic Coffee")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: 360, alignment: .leading)
+                        .padding(.top, 20)
+                    HStack{
+                        Image(systemName: "figure.walk")
+                            .font(.body)
+                        Text("15 mins walk")
+                            .font(.body)
+                            .frame(maxWidth: 360, alignment: .leading)
+                    }
+                }
+                Button {
+                } label: {
+                    Image(systemName: "arrow.triangle.turn.up.right.diamond.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .offset(x: 0, y: 10)
+                }
+            }
+            .padding(.horizontal)
+            Divider()
+                .padding(.bottom, 10)
+            
+            Picker("", selection: $favoriteColor) {
+                ForEach(colors, id: \.self) {
+                    Text($0)
+                }
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal)
+
+                ScrollView {
+                    Spacer()
+                    if favoriteColor == "All"
+                    {
+                        
+                        listPeople(
+                            profilePhoto: "SaraF",
+                            name: "Sara Florea",
+                            occupation: "Political Consultant",
+                            industry: "Consultancy",
+                            skill: "Leadership",
+                            skill1: "Research",
+                            skill2: "Bloomberg",
+                            description: "“Consultant in a different timezone, studying Mathematics and Quantitative Finance, searching for problems to solve in every one.”"
+                        )
+                        listPeople(
+                            profilePhoto: "AliceJ",
+                            name: "Alice Johnson",
+                            occupation: "Marketing Specialist at Banana Company",
+                            industry: "Marketing",
+                            skill: "Content Creation",
+                            skill1: "Management",
+                            skill2: "SEO",
+                            description: "“Passionate about creating engaging content and building strong online communities.”"
+                        )
+                
+                            listPeople(
+                                profilePhoto: "ChrisT",
+                                name: "Chris Taylor",
+                                occupation: "High School Teacher at City High School.",
+                                industry: "Education",
+                                skill: "Curriculum Development",
+                                skill1: "Teaching",
+                                skill2: "Educational Technology",
+                                description: "“Inspiring students to love learning and embrace new educational technologies.”"
+                            )
+                        
+                       
+                        listPeople(
+                            profilePhoto: "OliviaZ",
+                            name: "Olivia Zhang",
+                            occupation: "Product Manager at Sherpa",
+                            industry: "Fashion",
+                            skill: "Design",
+                            skill1: "Pattern",
+                            skill2: "Photoshop",
+                            description: "“Bringing creativity and style to the world of fashion through innovative designs.”"
+                            
+                        
+                        )
+                        listPeople(
+                            profilePhoto: "JasmineP",
+                            name: "Jasmine Patel",
+                            occupation: "Software Developer at Tech Solutions Inc.",
+                            industry: "IT",
+                            skill: "Database",
+                            skill1: "Programming",
+                            skill2: "Cybersecurity",
+                            description: "“Passionate about creating secure and efficient software solutions.”"
+                        )
+                        listPeople(
+                            profilePhoto: "LenaK",
+                            name: "Lena Kim",
+                            occupation: "Software Developer at Tech Solutions Inc.",
+                            industry: "IT",
+                            skill: "Cloud",
+                            skill1: "DevOps",
+                            skill2: "Automation",
+                            description: "“Specializing in cloud technologies and streamlining development processes.”"
+                        )
+                    }
+                    else{
+                            listPeople(
+                                profilePhoto: "JasmineP",
+                                name: "Jasmine Patel",
+                                occupation: "Software Developer at Tech Solutions Inc.",
+                                industry: "IT",
+                                skill: "Database",
+                                skill1: "Programming",
+                                skill2: "Cybersecurity",
+                                description: "“Passionate about creating secure and efficient software solutions.”"
+                            )
+                        .foregroundStyle(.black)
+                        listPeople(
+                            profilePhoto: "LenaK",
+                            name: "Lena Kim",
+                            occupation: "Software Developer at Tech Solutions Inc.",
+                            industry: "IT",
+                            skill: "Cloud",
+                            skill1: "DevOps",
+                            skill2: "Automation",
+                            description: "“Specializing in cloud technologies and streamlining development processes.”"
+                        )
+                    }
+                    Rectangle()
+                        .frame(width:.infinity,height: 300)
+                        .foregroundColor(.white)
+                }
+            }
+        }
     }
 }
 
-#Preview {
-    EpicCoffeeView()
+struct EpicCoffeeView_Previews: PreviewProvider {
+    static var previews: some View {
+        EpicCoffeeView()
+    }
 }

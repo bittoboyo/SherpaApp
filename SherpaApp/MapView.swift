@@ -23,181 +23,206 @@ struct MapView: View {
     @State private var vibrateOnRing = true
     
     var body: some View {
-        ZStack{
-            Map() {
-                Annotation("Alpaca Cafe", coordinate: .alpacaCafe) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(.blue)
-                            .frame(width:35,height:35)
-                        Button{
-                            checkInList = true
-                        } label: {
-                            Image(systemName: "cup.and.saucer.fill")
-                                .foregroundStyle(.white)
-                        }
-
-                        Circle()
-                            .offset(x: 20, y: -20)
-                            .fill(.blue)
-                        Text("10")
-                            .offset(x: 20, y: -20)
-                            .fontWeight(.bold)
+    ZStack{
+        Map() {
+            Annotation("Alpaca Cafe", coordinate: .alpacaCafe) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(.blue)
+                        .frame(width:35,height:35)
+                    Button{
+                        checkInList = true
+                        checkInPlaceNo = 0
+                    } label: {
+                        Image(systemName: "cup.and.saucer.fill")
                             .foregroundStyle(.white)
-                            .padding(5)
                     }
-                }
-                
-                Annotation("Epic Coffee", coordinate: .epicCoffee) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(.blue)
-                            .frame(width:35,height:35)
-                        Button {
-//                            checkInList = true
-                        } label: {
-                            Image(systemName: "cup.and.saucer.fill")
-                                .foregroundStyle(.white)
-                        }
-                        
-                        Circle()
-                            .offset(x: 20, y: -20)
-                            .fill(.blue)
-                        Text("4")
-                            .offset(x: 20, y: -20)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.white)
-                            .padding(5)
-                    }
-                }
-                
-                Annotation("Sydney Local Library", coordinate: .sydneyLibrary) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(.blue)
-                            .frame(width:35,height:35)
-                        Button {
 
-                            checkInList = true
-                            checkInPlaceNo = 0
-
-                        } label: {
-                            Image(systemName: "book.fill")
-                                .foregroundStyle(.white)
-                        }
-                        
-                        Circle()
-                            .offset(x: 20, y: -20)
-                            .fill(.blue)
-                        Text("17")
-                            .offset(x: 20, y: -20)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.white)
-                            .padding(5)
-                    }
-                }
-                
-                Annotation("Abercrombie Hotel", coordinate: .abercrombieHotel) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(.blue)
-                            .frame(width:35,height:35)
-                        Button {
-
-                            checkInList = true
-                            checkInPlaceNo = 0
-
-                        }label: {
-                            Image(systemName: "building.2.fill")
-                                .foregroundStyle(.white)
-                        }
-
-                        Circle()
-                            .offset(x: 20, y: -20)
-                            .fill(.blue)
-                        Text("22")
-                            .offset(x: 20, y: -20)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.white)
-                            .padding(5)
-                    }
-                }
-                
-                Annotation("Fortress Sydney", coordinate: .fortressSydney) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5)
-                            .fill(.blue)
-                            .frame(width:35,height:35)
-                        Button {
-//                            checkInList = true
-                        }label: {
-                            Image(systemName: "gamecontroller.fill")
-                                .foregroundStyle(.white)
-                        }
-
-                        Circle()
-                            .offset(x: 20, y: -20)
-                            .fill(.blue)
-                        Text("20")
-                            .offset(x: 20, y: -20)
-                            .fontWeight(.bold)
-                            .foregroundStyle(.white)
-                            .padding(5)
-                    }
+                    Circle()
+                        .offset(x: 20, y: -20)
+                        .fill(.blue)
+                    Text("4")
+                        .offset(x: 20, y: -20)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .padding(5)
                 }
             }
-            .mapControls {
-                MapUserLocationButton()
-            }
-            .mapStyle(.standard(
-                emphasis: .automatic,
-                pointsOfInterest: .excludingAll,
-                showsTraffic: false))
-            .onAppear {
-                CLLocationManager().requestWhenInUseAuthorization()
-            }
-            .offset(y:75)
             
-            
-            HeaderView()
-            
-            VStack(alignment:.leading){
-                Text("Auto Check-in")
-                Toggle(isOn: $vibrateOnRing) {
-                }
-                    .offset(x:-340)
-            }
-            .frame(width:.infinity, height:200)
-            .offset(x:10,y:-240)
-
-
-            if checkInList == true{
-            //overlay screen for check-in member list
-                
-                ZStack{
-                    RoundedRectangle(cornerRadius: 20)
-                        .foregroundColor(.white)
-                        .frame(width: rectangleWidth, height: rectangleHeight)
-                        .offset(offset)
-                        .gesture(dragGesture)
-                        .position(x: rectangleWidth/2, y: rectangleHeight)
+            Annotation("Epic Coffee", coordinate: .epicCoffee) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(.blue)
+                        .frame(width:35,height:35)
+                    Button {
+                        checkInList = true
+                        checkInPlaceNo = 3
+                    } label: {
+                        Image(systemName: "cup.and.saucer.fill")
+                            .foregroundStyle(.white)
+                    }
                     
-                    RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(Color(red:0.8,green:0.8,blue:0.8))
-                        .frame(width: 45, height: 7)
-                        .offset(offset)
-                        .gesture(dragGesture)
-                        .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
+                    Circle()
+                        .offset(x: 20, y: -20)
+                        .fill(.blue)
+                    Text("6")
+                        .offset(x: 20, y: -20)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .padding(5)
+                }
+            }
+            
+            Annotation("Sydney Local Library", coordinate: .sydneyLibrary) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(.blue)
+                        .frame(width:35,height:35)
+                    Button {
+                        checkInList = true
+                        checkInPlaceNo = 4
+                    } label: {
+                        Image(systemName: "book.fill")
+                            .foregroundStyle(.white)
+                    }
                     
+                    Circle()
+                        .offset(x: 20, y: -20)
+                        .fill(.blue)
+                    Text("17")
+                        .offset(x: 20, y: -20)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .padding(5)
+                }
+            }
+            
+            Annotation("Abercrombie Hotel", coordinate: .abercrombieHotel) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(.blue)
+                        .frame(width:35,height:35)
+                    Button {
+                        checkInList = true
+                        checkInPlaceNo = 2
+                    }label: {
+                        Image(systemName: "building.2.fill")
+                            .foregroundStyle(.white)
+                    }
+
+                    Circle()
+                        .offset(x: 20, y: -20)
+                        .fill(.blue)
+                    Text("22")
+                        .offset(x: 20, y: -20)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .padding(5)
+                }
+            }
+            
+            Annotation("Fortress Sydney", coordinate: .fortressSydney) {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 5)
+                        .fill(.blue)
+                        .frame(width:35,height:35)
+                    Button {
+                        checkInList = true
+                        checkInPlaceNo = 1
+                    }label: {
+                        Image(systemName: "gamecontroller.fill")
+                            .foregroundStyle(.white)
+                    }
+
+                    Circle()
+                        .offset(x: 20, y: -20)
+                        .fill(.blue)
+                    Text("4")
+                        .offset(x: 20, y: -20)
+                        .fontWeight(.bold)
+                        .foregroundStyle(.white)
+                        .padding(5)
+                }
+            }
+        }
+        .mapControls {
+            MapUserLocationButton()
+        }
+        .mapStyle(.standard(
+            emphasis: .automatic,
+            pointsOfInterest: .excludingAll,
+            showsTraffic: false))
+        .onAppear {
+            CLLocationManager().requestWhenInUseAuthorization()
+        }
+        .offset(y:75)
+        
+        
+        HeaderView()
+        
+        VStack(alignment:.leading){
+            Text("Auto Check-in")
+            Toggle(isOn: $vibrateOnRing) {
+            }
+                .offset(x:-340)
+        }
+        .frame(width:.infinity, height:200)
+        .offset(x:10,y:-240)
+
+
+        if checkInList == true{
+        //overlay screen for check-in member list
+            
+            ZStack{
+                RoundedRectangle(cornerRadius: 20)
+                    .foregroundColor(.white)
+                    .frame(width: rectangleWidth, height: rectangleHeight)
+                    .offset(offset)
+                    .gesture(dragGesture)
+                    .position(x: rectangleWidth/2, y: rectangleHeight)
+                
+                RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color(red:0.8,green:0.8,blue:0.8))
+                    .frame(width: 45, height: 7)
+                    .offset(offset)
+                    .gesture(dragGesture)
+                    .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
+                
+                if checkInPlaceNo == 0{
                     PeopleView()
                         .frame(width: rectangleWidth, height: rectangleHeight)
                         .offset(offset)
                         .position(x: rectangleWidth/2, y: rectangleHeight + 36)
-
+                }
+                else if checkInPlaceNo == 1{
+                    FortressSydneyView()
+                        .frame(width: rectangleWidth, height: rectangleHeight)
+                        .offset(offset)
+                        .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                }
+                else if checkInPlaceNo == 2{
+                    HotelView()
+                        .frame(width: rectangleWidth, height: rectangleHeight)
+                        .offset(offset)
+                        .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                }
+                else if checkInPlaceNo == 3{
+                    EpicCoffeeView()
+                        .frame(width: rectangleWidth, height: rectangleHeight)
+                        .offset(offset)
+                        .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                }
+                else if checkInPlaceNo == 4{
+                    SydneyLocalLibraryView()
+                        .frame(width: rectangleWidth, height: rectangleHeight)
+                        .offset(offset)
+                        .position(x: rectangleWidth/2, y: rectangleHeight + 36)
                 }
             }
         }
     }
+}
+
     var dragGesture: some Gesture {
     DragGesture()
         .onChanged {
