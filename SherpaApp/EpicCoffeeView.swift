@@ -52,10 +52,10 @@ struct EpicCoffeeView: View {
                             name: "Sara Florea",
                             occupation: "Political Consultant",
                             industry: "Consultancy",
-                            skill: "Leadership",
+                            skill: "Bloomberg",
                             skill1: "Research",
-                            skill2: "Bloomberg",
-                            description: "“Consultant in a different timezone, studying Mathematics and Quantitative Finance, searching for problems to solve in every one.”"
+                            skill2: "Leadership",
+                            description: "“Problem-solver with entrepreneurial mindset 🌏 My background is in Finance, Economics and Mathematics.”"
                         )
                         listPeople(
                             profilePhoto: "XuanZ",
