@@ -229,7 +229,7 @@ struct MapView: View {
         .onChanged {
             value in
             @State var rectY = value.startLocation.y + value.translation.height
-            if rectY < 210 && rectY > -450{
+            if rectY < 210 && rectY > -350{
                 offset = CGSize(width: 0, height: rectY)
             }
             else if rectY >= 210{
