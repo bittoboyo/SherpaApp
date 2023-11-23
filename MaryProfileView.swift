@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct JohnProfileView: View {
+struct MaryProfileView: View {
     @Environment(\.openURL) var openURL
     @State public var isBookmarked = true
     
@@ -24,15 +24,15 @@ struct JohnProfileView: View {
                     .offset(x: 160, y: 55)
                     
                     //Profile picture
-                    Image("John")
+                    Image("MaryP")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 125)
+                        .frame(height: 150)
                         .clipShape(Circle())
                     
                     //Name and industry
                     HStack{
-                        Text("John Smith")
+                        Text("Mary Pops")
                             .font(.title)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.black)
@@ -46,7 +46,7 @@ struct JohnProfileView: View {
                     }
                     
                     //Job position and company
-                    Text("Interaction Designer at Apple")
+                    Text("Product Manager at Sherpa")
                         .font(.title2)
                         .foregroundColor(.black)
                     
@@ -204,5 +204,5 @@ struct JohnProfileView: View {
 }
 
 #Preview {
-    JohnProfileView()
+    MaryProfileView()
 }
