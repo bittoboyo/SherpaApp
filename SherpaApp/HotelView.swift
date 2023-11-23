@@ -47,16 +47,20 @@ struct HotelView: View {
                     if favoriteColor == "All"
                     {
                         
-                        listPeople(
-                            profilePhoto: "AlverR",
-                            name: "Alver Remolar",
-                            occupation: "Prompt Engineer at Sherpa",
-                            industry: "IT",
-                            skill: "ChatGPT",
-                            skill1: "Midjourney",
-                            skill2: "Lang Model",
-                            description: "“Passionate in exploring the endless possibilities of AI. Let's meet at Abercrombie Hotel! 🚀”"
-                        )
+                        NavigationLink(destination: AlverProfileView()){
+                            listPeople(
+                                profilePhoto: "AlverR",
+                                name: "Alver Remolar",
+                                occupation: "Prompt Engineer at Sherpa",
+                                industry: "IT",
+                                skill: "ChatGPT",
+                                skill1: "Midjourney",
+                                skill2: "Lang Model",
+                                description: "“Passionate in exploring the endless possibilities of AI. Let's meet at Abercrombie Hotel! 🚀”"
+                            )
+                            .foregroundColor(.black)
+                        }
+                        
                         listPeople(
                             profilePhoto: "EvaM",
                             name: "Angela Coggin",
@@ -101,7 +105,6 @@ struct HotelView: View {
                                 skill2: "Research",
                                 description: "“Marell’s my name, and gaming is my game!”"
                             )
-
                     }
                     Rectangle()
                         .frame(width:.infinity,height: 300)
