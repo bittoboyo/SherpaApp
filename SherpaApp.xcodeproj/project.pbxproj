@@ -40,6 +40,7 @@
 		82F6A6562B0EDFBF007D6658 /* MarioProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F6A6552B0EDFBF007D6658 /* MarioProfileView.swift */; };
 		82F6A65A2B0F1828007D6658 /* AlverProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F6A6592B0F1828007D6658 /* AlverProfileView.swift */; };
 		9D81A9F22B0C319800CE3A48 /* ChatUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D81A9F12B0C319800CE3A48 /* ChatUIView.swift */; };
+		9D81A9F62B0F851C00CE3A48 /* SaraProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D81A9F52B0F851C00CE3A48 /* SaraProfileView.swift */; };
 		9DB216672B0AFBE300E4D864 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB216662B0AFBE300E4D864 /* UserRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		82F6A6552B0EDFBF007D6658 /* MarioProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarioProfileView.swift; sourceTree = "<group>"; };
 		82F6A6592B0F1828007D6658 /* AlverProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlverProfileView.swift; sourceTree = "<group>"; };
 		9D81A9F12B0C319800CE3A48 /* ChatUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUIView.swift; sourceTree = "<group>"; };
+		9D81A9F52B0F851C00CE3A48 /* SaraProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaraProfileView.swift; sourceTree = "<group>"; };
 		9DB216662B0AFBE300E4D864 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				0D9DE9C92B0F7E490029A735 /* MarellChatUIView.swift */,
 				0DB8813D2B0F7C7D00BB2096 /* AlverChatUIView.swift */,
 				1313F7B82B0F6ED2007A68A8 /* XuanProfileView.swift */,
+				9D81A9F52B0F851C00CE3A48 /* SaraProfileView.swift */,
 				0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */,
 				82F6A6592B0F1828007D6658 /* AlverProfileView.swift */,
 				82F6A6552B0EDFBF007D6658 /* MarioProfileView.swift */,
@@ -352,6 +355,7 @@
 				9DB216672B0AFBE300E4D864 /* UserRow.swift in Sources */,
 				25DC1E772B0711FA003766D1 /* LocationManager.swift in Sources */,
 				25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */,
+				9D81A9F62B0F851C00CE3A48 /* SaraProfileView.swift in Sources */,
 				25DC1E752B06DEF5003766D1 /* UserProfileView.swift in Sources */,
 				1313F7A92B0EF466007A68A8 /* HotelView.swift in Sources */,
 				0D42564B2B0F44AF003F8C0F /* SunnyProfileView.swift in Sources */,
