@@ -48,58 +48,58 @@ struct SydneyLocalLibraryView: View {
                     {
                         
                         listPeople(
-                            profilePhoto: "BobLe",
-                            name: "Marell Bito",
-                            occupation: "Serious Game Researcher at UTS",
-                            industry: "IT",
-                            skill: "Unity",
-                            skill1: "C#",
-                            skill2: "Research",
-                            description: "“Marell’s my name, and gaming is my game!”"
+                            profilePhoto: "TaylorW",
+                            name: "Taylor Williams",
+                            occupation: "Content Writer at PenCraft Prose",
+                            industry: "Writing",
+                            skill: "SEO",
+                            skill1: "Copy Editing",
+                            skill2: "Time Management",
+                            description: "“Crafting compelling narratives remotely. ”"
                         )
                         listPeople(
-                            profilePhoto: "EvaM",
-                            name: "Angela Coggin",
-                            occupation: "Funding Officer at USYD",
-                            industry: "Education",
-                            skill: "Funding",
-                            skill1: "Proj Mgt",
-                            skill2: "PR",
-                            description: "“Eager to discuss potential collaborations and funding opportunities”"
+                            profilePhoto: "JordanL",
+                            name: "Jordan Lee",
+                            occupation: " Assistant at TaskMasters Inc.",
+                            industry: "Admin",
+                            skill: "Calendar Management",
+                            skill1: "Customer Service",
+                            skill2: "Task Prioritization",
+                            description: "“Juggling tasks seamlessly from afar.”"
                         )
                             listPeople(
-                                profilePhoto: "John",
-                                name: "Sophia Nguyen",
-                                occupation: "Interior Designer at Elle Decor",
-                                industry: "Design",
-                                skill: "Color Theory",
-                                skill1: "Furniture Design",
-                                skill2: "Space Planning",
-                                description: "“Curating spaces that tell stories.”"
+                                profilePhoto: "MorganC",
+                                name: "Morgan Chen",
+                                occupation: "Online Tutor at EduLink Solutions",
+                                industry: "Education",
+                                skill: "Curriculum Development",
+                                skill1: "Video Conferencing",
+                                skill2: "Student Engagement",
+                                description: "“Shaping minds through the screen. ”"
                             )
 
                         listPeople(
-                            profilePhoto: "MaryP",
-                            name: "Samuel Turner",
-                            occupation: "Senior Architect at X Studio",
-                            industry: "Architecture",
-                            skill: "AutoCAD",
-                            skill1: "3D Modeling",
-                            skill2: "Sustainable Design",
-                            description: "“Building dreams into structures. My drafting board is a landscape of blueprints”"
+                            profilePhoto: "CameronP",
+                            name: "Cameron Patel",
+                            occupation: "IT Consultant at SecureNet Solutions",
+                            industry: "IT",
+                            skill: "Cybersecurity",
+                            skill1: "Cloud Solutions",
+                            skill2: "Remote Troubleshooting",
+                            description: "“Securing networks from the home front.”"
                         )
                     }
                     else{
 
                             listPeople(
-                                profilePhoto: "BobLe",
-                                name: "Marell Bito",
-                                occupation: "Serious Game Researcher at UTS",
+                                profilePhoto: "CameronP",
+                                name: "Cameron Patel",
+                                occupation: "IT Consultant at SecureNet Solutions",
                                 industry: "IT",
-                                skill: "Unity",
-                                skill1: "C#",
-                                skill2: "Research",
-                                description: "“Marell’s my name, and gaming is my game!”"
+                                skill: "Cybersecurity",
+                                skill1: "Cloud Solutions",
+                                skill2: "Remote Troubleshooting",
+                                description: "“Securing networks from the home front.”"
                             )
 
                     }
