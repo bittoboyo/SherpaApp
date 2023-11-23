@@ -46,27 +46,31 @@ struct EpicCoffeeView: View {
                     Spacer()
                     if favoriteColor == "All"
                     {
+                        NavigationLink(destination: SaraProfileView()){
+                            listPeople(
+                                profilePhoto: "SaraF",
+                                name: "Sara Florea",
+                                occupation: "Political Consultant",
+                                industry: "Consultancy",
+                                skill: "Bloomberg",
+                                skill1: "Research",
+                                skill2: "Leadership",
+                                description: "“Problem-solver with entrepreneurial mindset🌏 My background is in Finance, Economics and Mathematics.”"
+                            )}.foregroundStyle(.black)
+                            .buttonStyle(PlainButtonStyle())
                         
-                        listPeople(
-                            profilePhoto: "SaraF",
-                            name: "Sara Florea",
-                            occupation: "Political Consultant",
-                            industry: "Consultancy",
-                            skill: "Bloomberg",
-                            skill1: "Research",
-                            skill2: "Leadership",
-                            description: "“Problem-solver with entrepreneurial mindset 🌏 My background is in Finance, Economics and Mathematics.”"
-                        )
-                        listPeople(
-                            profilePhoto: "XuanZ",
-                            name: "Xuan Zhang",
-                            occupation: "UI/UX Designer at UTS",
-                            industry: "IT",
-                            skill: "StoryTelling",
-                            skill1: "Research",
-                            skill2: "Figma",
-                            description: "“Love talking to people! Passionate in enhacing people's experience in daily basis.”"
-                        )
+                        NavigationLink(destination: XuanProfileView()){
+                            listPeople(
+                                profilePhoto: "XuanZ",
+                                name: "Xuan Zhang",
+                                occupation: "UI/UX Designer at UTS",
+                                industry: "IT",
+                                skill: "StoryTelling",
+                                skill1: "Research",
+                                skill2: "Figma",
+                                description: "“Love talking to people! Passionate in enhacing people's experience in daily basis.”"
+                            )}.foregroundStyle(.black)
+                            .buttonStyle(PlainButtonStyle())
                 
                             listPeople(
                                 profilePhoto: "ChrisT",

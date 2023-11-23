@@ -59,6 +59,7 @@ struct HotelView: View {
                                 description: "“Passionate about AI. Let's meet! 🚀”"
                             )
                             .foregroundColor(.black)
+                            .buttonStyle(PlainButtonStyle())
                         }
                         
                         listPeople(
@@ -94,7 +95,7 @@ struct HotelView: View {
                         )
                     }
                     else{
-
+                        NavigationLink(destination: AlverProfileView()){
                             listPeople(
                                 profilePhoto: "AlverR",
                                 name: "Alver Remolar",
@@ -105,6 +106,8 @@ struct HotelView: View {
                                 skill2: "Lang Model",
                                 description: "“Passionate about AI. Let's meet! 🚀”"
                             )
+                        }.foregroundStyle(.black)
+                            .buttonStyle(PlainButtonStyle())
                     }
                     Rectangle()
                         .frame(width:.infinity,height: 300)

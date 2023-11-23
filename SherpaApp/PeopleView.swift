@@ -80,6 +80,7 @@ struct PeopleView: View {
                                 description: "“Believe in making impact with design. Interested in the crossover of serious game and cultural sector. 🎮”"
                             )
                         }.foregroundStyle(.black)
+                            .buttonStyle(PlainButtonStyle())
                         listPeople(
                             profilePhoto: "MaryP",
                             name: "Mary Pops",
@@ -101,9 +102,10 @@ struct PeopleView: View {
                                 skill: "Figma",
                                 skill1: "User Flow",
                                 skill2: "Proj Mgt",
-                                description: "“Believe in making impact with design. Interested in the crossover of serious game and cultural sector. 🎮”"
+                                description: "“Believe in making impact with design. Interested in the crossover of serious game and cultural sector 🎮”"
                             )
-                        }.foregroundStyle(.black)
+                        }.foregroundStyle(.black).buttonStyle(PlainButtonStyle())
+                        
                         listPeople(
                             profilePhoto: "MaryP",
                             name: "Mary Pops",
