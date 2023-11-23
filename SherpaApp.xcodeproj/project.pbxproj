@@ -11,6 +11,7 @@
 		0D42564B2B0F44AF003F8C0F /* SunnyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */; };
 		0D7A7BAE2B0E3BB20019A2E2 /* ChatHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A7BAD2B0E3BB20019A2E2 /* ChatHistoryView.swift */; };
 		0D9CE7CF2B0D6DDE008CB48A /* JohnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */; };
+		0DB8813E2B0F7C7D00BB2096 /* AlverChatUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB8813D2B0F7C7D00BB2096 /* AlverChatUIView.swift */; };
 		1313F7A72B0EF441007A68A8 /* EpicCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7A62B0EF441007A68A8 /* EpicCoffeeView.swift */; };
 		1313F7A92B0EF466007A68A8 /* HotelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7A82B0EF466007A68A8 /* HotelView.swift */; };
 		1313F7AB2B0EF487007A68A8 /* FortressSydneyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7AA2B0EF487007A68A8 /* FortressSydneyView.swift */; };
@@ -63,6 +64,7 @@
 		0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyProfileView.swift; sourceTree = "<group>"; };
 		0D7A7BAD2B0E3BB20019A2E2 /* ChatHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryView.swift; sourceTree = "<group>"; };
 		0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JohnProfileView.swift; sourceTree = "<group>"; };
+		0DB8813D2B0F7C7D00BB2096 /* AlverChatUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlverChatUIView.swift; sourceTree = "<group>"; };
 		1313F7A62B0EF441007A68A8 /* EpicCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicCoffeeView.swift; sourceTree = "<group>"; };
 		1313F7A82B0EF466007A68A8 /* HotelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelView.swift; sourceTree = "<group>"; };
 		1313F7AA2B0EF487007A68A8 /* FortressSydneyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FortressSydneyView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		25B368692B06CD90004B48EA = {
 			isa = PBXGroup;
 			children = (
+				0DB8813D2B0F7C7D00BB2096 /* AlverChatUIView.swift */,
 				1313F7B82B0F6ED2007A68A8 /* XuanProfileView.swift */,
 				0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */,
 				82F6A6592B0F1828007D6658 /* AlverProfileView.swift */,
@@ -335,6 +338,7 @@
 				1313F7AB2B0EF487007A68A8 /* FortressSydneyView.swift in Sources */,
 				25B368782B06CD90004B48EA /* ContentView.swift in Sources */,
 				82F6A65A2B0F1828007D6658 /* AlverProfileView.swift in Sources */,
+				0DB8813E2B0F7C7D00BB2096 /* AlverChatUIView.swift in Sources */,
 				82F6A6562B0EDFBF007D6658 /* MarioProfileView.swift in Sources */,
 				82F6A64C2B0EDC51007D6658 /* MaryProfileView.swift in Sources */,
 				0D7A7BAE2B0E3BB20019A2E2 /* ChatHistoryView.swift in Sources */,
