@@ -63,47 +63,47 @@ struct HotelView: View {
                         
                         listPeople(
                             profilePhoto: "EvaM",
-                            name: "Angela Coggin",
-                            occupation: "Funding Officer at USYD",
-                            industry: "Education",
-                            skill: "Funding",
-                            skill1: "Proj Mgt",
-                            skill2: "PR",
-                            description: "“Eager to discuss potential collaborations and funding opportunities”"
+                            name: "Alex Harper",
+                            occupation: "Graphic Designer at PixelCraft Studios",
+                            industry: "Design",
+                            skill: "Adobe Creative Cloud",
+                            skill1: "Branding",
+                            skill2: "Remote Collaboration",
+                            description: "“Illustrating ideas from a distance.”"
                         )
                             listPeople(
                                 profilePhoto: "John",
-                                name: "Sophia Nguyen",
-                                occupation: "Interior Designer at Elle Decor",
-                                industry: "Design",
-                                skill: "Color Theory",
-                                skill1: "Furniture Design",
-                                skill2: "Space Planning",
-                                description: "“Curating spaces that tell stories.”"
+                                name: "Casey Baker",
+                                occupation: "Financial Analyst at BudgetMinds LLC",
+                                industry: "Finance",
+                                skill: "Budget Analysis",
+                                skill1: "Remote Financial Reporting",
+                                skill2: "Spreadsheet Mastery",
+                                description: "“Balancing numbers remotely.”"
                             )
 
                         listPeople(
                             profilePhoto: "MaryP",
                                 name: "Samuel Turner",
-                            occupation: "Senior Architect at X Studio",
-                            industry: "Architecture",
-                            skill: "AutoCAD",
-                            skill1: "3D Modeling",
-                            skill2: "Sustainable Design",
-                            description: "“Building dreams into structures. My drafting board is a landscape of blueprints”"
+                            occupation: "Online Therapist at SereneMind Counseling",
+                            industry: "Counseling",
+                            skill: "Teletherapy",
+                            skill1: "Emotional Support",
+                            skill2: "Stress Management",
+                            description: "“Providing virtual solace.”"
                         )
                     }
                     else{
 
                             listPeople(
-                                profilePhoto: "BobLe",
-                                name: "Marell Bito",
-                                occupation: "Serious Game Researcher at UTS",
+                                profilePhoto: "AlverR",
+                                name: "Alver Remolar",
+                                occupation: "Prompt Engineer at Sherpa",
                                 industry: "IT",
-                                skill: "Unity",
-                                skill1: "C#",
-                                skill2: "Research",
-                                description: "“Marell’s my name, and gaming is my game!”"
+                                skill: "ChatGPT",
+                                skill1: "Midjourney",
+                                skill2: "Lang Model",
+                                description: "“Passionate in exploring the endless possibilities of AI. Let's meet at Abercrombie Hotel! 🚀”"
                             )
                     }
                     Rectangle()
