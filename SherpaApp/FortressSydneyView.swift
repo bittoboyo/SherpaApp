@@ -48,7 +48,7 @@ struct FortressSydneyView: View {
                     {
                         
                         listPeople(
-                            profilePhoto: "BobLe",
+                            profilePhoto: "Marell",
                             name: "Marell Bito",
                             occupation: "Serious Game Researcher at UTS",
                             industry: "IT",
@@ -58,7 +58,7 @@ struct FortressSydneyView: View {
                             description: "“Marell’s my name, and gaming is my game!”"
                         )
                         listPeople(
-                            profilePhoto: "EvaM",
+                            profilePhoto: "AngelaC",
                             name: "Angela Coggin",
                             occupation: "Funding Officer at USYD",
                             industry: "Education",
@@ -68,7 +68,7 @@ struct FortressSydneyView: View {
                             description: "“Eager to discuss potential collaborations and funding opportunities”"
                         )
                             listPeople(
-                                profilePhoto: "John",
+                                profilePhoto: "SophiaN",
                                 name: "Sophia Nguyen",
                                 occupation: "Interior Designer at Elle Decor",
                                 industry: "Design",
@@ -79,7 +79,7 @@ struct FortressSydneyView: View {
                             )
 
                         listPeople(
-                            profilePhoto: "MaryP",
+                            profilePhoto: "SamuelT",
                             name: "Samuel Turner",
                             occupation: "Senior Architect at X Studio",
                             industry: "Architecture",
@@ -92,7 +92,7 @@ struct FortressSydneyView: View {
                     else{
 
                             listPeople(
-                                profilePhoto: "BobLe",
+                                profilePhoto: "Marell",
                                 name: "Marell Bito",
                                 occupation: "Serious Game Researcher at UTS",
                                 industry: "IT",
