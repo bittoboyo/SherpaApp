@@ -161,13 +161,14 @@ struct MapView: View {
         HeaderView()
         
         VStack(alignment:.leading){
-            Text("Auto Check-in")
             Toggle(isOn: $vibrateOnRing) {
             }
-                .offset(x:-340)
+                .offset(x:-343)
+            Text("Auto Check-in")
+                .font(.caption)
         }
         .frame(width:.infinity, height:200)
-        .offset(x:10,y:-240)
+        .offset(x:10,y:-245)
 
 
         if checkInList == true{
