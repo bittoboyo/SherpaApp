@@ -14,6 +14,7 @@ struct MapView: View {
     @StateObject var manager = LocationManager()
 
     @State var checkInList = false
+    @State var checkInPlaceNo = 0
     private let rectangleHeight: CGFloat = 852
     private let rectangleWidth: CGFloat = 393
     @State private var pos = CGPoint(x: 100, y: 100)
@@ -76,7 +77,10 @@ struct MapView: View {
                             .fill(.blue)
                             .frame(width:35,height:35)
                         Button {
-//                            checkInList = true
+
+                            checkInList = true
+                            checkInPlaceNo = 0
+
                         } label: {
                             Image(systemName: "book.fill")
                                 .foregroundStyle(.white)
@@ -99,7 +103,10 @@ struct MapView: View {
                             .fill(.blue)
                             .frame(width:35,height:35)
                         Button {
-//                            checkInList = true
+
+                            checkInList = true
+                            checkInPlaceNo = 0
+
                         }label: {
                             Image(systemName: "building.2.fill")
                                 .foregroundStyle(.white)
