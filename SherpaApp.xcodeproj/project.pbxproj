@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D0CDE2B2B0DA6B9003F5CB0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */; };
+		0D42564B2B0F44AF003F8C0F /* SunnyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */; };
 		0D7A7BAE2B0E3BB20019A2E2 /* ChatHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7A7BAD2B0E3BB20019A2E2 /* ChatHistoryView.swift */; };
 		0D9CE7CF2B0D6DDE008CB48A /* JohnProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */; };
 		1313F7A72B0EF441007A68A8 /* EpicCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1313F7A62B0EF441007A68A8 /* EpicCoffeeView.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		0D0CDE2A2B0DA6B9003F5CB0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyProfileView.swift; sourceTree = "<group>"; };
 		0D7A7BAD2B0E3BB20019A2E2 /* ChatHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryView.swift; sourceTree = "<group>"; };
 		0D9CE7CE2B0D6DDE008CB48A /* JohnProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JohnProfileView.swift; sourceTree = "<group>"; };
 		1313F7A62B0EF441007A68A8 /* EpicCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicCoffeeView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		25B368692B06CD90004B48EA = {
 			isa = PBXGroup;
 			children = (
+				0D42564A2B0F44AF003F8C0F /* SunnyProfileView.swift */,
 				82F6A6592B0F1828007D6658 /* AlverProfileView.swift */,
 				82F6A6552B0EDFBF007D6658 /* MarioProfileView.swift */,
 				82F6A6532B0EDEFC007D6658 /* ZiProfileView.swift */,
@@ -340,6 +343,7 @@
 				25B368762B06CD90004B48EA /* SherpaAppApp.swift in Sources */,
 				25DC1E752B06DEF5003766D1 /* UserProfileView.swift in Sources */,
 				1313F7A92B0EF466007A68A8 /* HotelView.swift in Sources */,
+				0D42564B2B0F44AF003F8C0F /* SunnyProfileView.swift in Sources */,
 				82F6A6522B0EDE48007D6658 /* JasonProfileView.swift in Sources */,
 				25DC1E6F2B06DEBE003766D1 /* PeopleView.swift in Sources */,
 				13AB1D4C2B0709EB0095E16B /* Users.swift in Sources */,
