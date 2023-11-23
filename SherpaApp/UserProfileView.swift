@@ -120,7 +120,7 @@ struct UserProfileView: View {
                         .font(.system(.title2))
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                         .padding(.horizontal, 8)
-                    Text("Entrepreneur mind. Always work with coffee, jazz music, and my cat Orlah.")
+                    Text("Entrepreneurial mindset. I always listen to jazz music, have coffee and my cat Orlah by my side while I work.")
                         .font(.system(.body))
                         .padding(.horizontal, 8)
                 }
