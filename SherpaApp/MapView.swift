@@ -80,7 +80,7 @@ struct MapView: View {
                             .frame(width:35,height:35)
                         Button {
                             checkInList = true
-                            checkInPlaceNo = 0
+                            checkInPlaceNo = 4
                         } label: {
                             Image(systemName: "book.fill")
                                 .foregroundStyle(.white)
@@ -104,7 +104,7 @@ struct MapView: View {
                             .frame(width:35,height:35)
                         Button {
                             checkInList = true
-                            checkInPlaceNo = 0
+                            checkInPlaceNo = 2
                         }label: {
                             Image(systemName: "building.2.fill")
                                 .foregroundStyle(.white)
