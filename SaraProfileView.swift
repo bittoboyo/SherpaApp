@@ -103,7 +103,7 @@ struct SaraProfileView: View {
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding(.horizontal,10)
                         
-                        Text("Problem-solver with entrepreneurial mindset🌏 My background is in Finance, Economics and Mathematics. ")
+                        Text("Problem-solver with entrepreneurial mindset🌏 My background is in Finance, Economics and Mathematics.")
                     //.frame(width: 180, height: 50)
                             .font(.system(.body))
                         

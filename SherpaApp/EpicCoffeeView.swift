@@ -55,7 +55,7 @@ struct EpicCoffeeView: View {
                             skill: "Bloomberg",
                             skill1: "Research",
                             skill2: "Leadership",
-                            description: "“Consultant in a different timezone, studying Mathematics and Quant Finance in this one, searching for problems to solve in every one.”"
+                            description: "“Problem-solver with entrepreneurial mindset 🌏 My background is in Finance, Economics and Mathematics.”"
                         )
                         listPeople(
                             profilePhoto: "XuanZ",
