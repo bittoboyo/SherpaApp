@@ -7,12 +7,20 @@ struct PeopleView: View {
     NavigationView{
         VStack {
             HStack {
-                Text("Alpaca Cafe")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .frame(maxWidth: 360, alignment: .leading)
-                    .padding(.top, 20)
-                
+                VStack{
+                    Text("Alpaca Cafe")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .frame(maxWidth: 360, alignment: .leading)
+                        .padding(.top, 20)
+                    HStack{
+                        Image(systemName: "figure.walk")
+                            .font(.body)
+                        Text("3 mins walk")
+                            .font(.body)
+                            .frame(maxWidth: 360, alignment: .leading)
+                    }
+                }
                 Button {
                 } label: {
                     Image(systemName: "arrow.triangle.turn.up.right.diamond.fill")

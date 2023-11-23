@@ -14,6 +14,7 @@ struct MapView: View {
     @StateObject var manager = LocationManager()
 
     @State var checkInList = false
+    @State var checkInPlaceNo = 0
     private let rectangleHeight: CGFloat = 852
     private let rectangleWidth: CGFloat = 393
     @State private var pos = CGPoint(x: 100, y: 100)
@@ -31,6 +32,7 @@ struct MapView: View {
                             .frame(width:35,height:35)
                         Button{
                             checkInList = true
+                            checkInPlaceNo = 0
                         } label: {
                             Image(systemName: "cup.and.saucer.fill")
                                 .foregroundStyle(.white)
@@ -39,7 +41,7 @@ struct MapView: View {
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
-                        Text("10")
+                        Text("4")
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
@@ -53,7 +55,8 @@ struct MapView: View {
                             .fill(.blue)
                             .frame(width:35,height:35)
                         Button {
-//                            checkInList = true
+                            checkInList = true
+                            checkInPlaceNo = 3
                         } label: {
                             Image(systemName: "cup.and.saucer.fill")
                                 .foregroundStyle(.white)
@@ -62,7 +65,7 @@ struct MapView: View {
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
-                        Text("4")
+                        Text("6")
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
@@ -76,7 +79,8 @@ struct MapView: View {
                             .fill(.blue)
                             .frame(width:35,height:35)
                         Button {
-//                            checkInList = true
+                            checkInList = true
+                            checkInPlaceNo = 4
                         } label: {
                             Image(systemName: "book.fill")
                                 .foregroundStyle(.white)
@@ -99,7 +103,8 @@ struct MapView: View {
                             .fill(.blue)
                             .frame(width:35,height:35)
                         Button {
-//                            checkInList = true
+                            checkInList = true
+                            checkInPlaceNo = 2
                         }label: {
                             Image(systemName: "building.2.fill")
                                 .foregroundStyle(.white)
@@ -122,7 +127,8 @@ struct MapView: View {
                             .fill(.blue)
                             .frame(width:35,height:35)
                         Button {
-//                            checkInList = true
+                            checkInList = true
+                            checkInPlaceNo = 1
                         }label: {
                             Image(systemName: "gamecontroller.fill")
                                 .foregroundStyle(.white)
@@ -131,7 +137,7 @@ struct MapView: View {
                         Circle()
                             .offset(x: 20, y: -20)
                             .fill(.blue)
-                        Text("20")
+                        Text("4")
                             .offset(x: 20, y: -20)
                             .fontWeight(.bold)
                             .foregroundStyle(.white)
@@ -182,11 +188,36 @@ struct MapView: View {
                         .gesture(dragGesture)
                         .position(x: rectangleWidth/2, y: rectangleHeight/2 + 18)
                     
-                    PeopleView()
-                        .frame(width: rectangleWidth, height: rectangleHeight)
-                        .offset(offset)
-                        .position(x: rectangleWidth/2, y: rectangleHeight + 36)
-
+                    if checkInPlaceNo == 0{
+                        PeopleView()
+                            .frame(width: rectangleWidth, height: rectangleHeight)
+                            .offset(offset)
+                            .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                    }
+                    else if checkInPlaceNo == 1{
+                        FortressSydneyView()
+                            .frame(width: rectangleWidth, height: rectangleHeight)
+                            .offset(offset)
+                            .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                    }
+                    else if checkInPlaceNo == 2{
+                        HotelView()
+                            .frame(width: rectangleWidth, height: rectangleHeight)
+                            .offset(offset)
+                            .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                    }
+                    else if checkInPlaceNo == 3{
+                        EpicCoffeeView()
+                            .frame(width: rectangleWidth, height: rectangleHeight)
+                            .offset(offset)
+                            .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                    }
+                    else if checkInPlaceNo == 4{
+                        SydneyLocalLibraryView()
+                            .frame(width: rectangleWidth, height: rectangleHeight)
+                            .offset(offset)
+                            .position(x: rectangleWidth/2, y: rectangleHeight + 36)
+                    }
                 }
             }
         }
