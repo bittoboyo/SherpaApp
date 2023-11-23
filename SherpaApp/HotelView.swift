@@ -48,14 +48,14 @@ struct HotelView: View {
                     {
                         
                         listPeople(
-                            profilePhoto: "BobLe",
-                            name: "Marell Bito",
-                            occupation: "Serious Game Researcher at UTS",
+                            profilePhoto: "AlverR",
+                            name: "Alver Remolar",
+                            occupation: "Prompt Engineer at Sherpa",
                             industry: "IT",
-                            skill: "Unity",
-                            skill1: "C#",
-                            skill2: "Research",
-                            description: "“Marell’s my name, and gaming is my game!”"
+                            skill: "ChatGPT",
+                            skill1: "Midjourney",
+                            skill2: "Lang Model",
+                            description: "“Passionate in exploring the endless possibilities of AI. Let's meet at Abercrombie Hotel! 🚀”"
                         )
                         listPeople(
                             profilePhoto: "EvaM",
@@ -80,7 +80,7 @@ struct HotelView: View {
 
                         listPeople(
                             profilePhoto: "MaryP",
-                            name: "Samuel Turner",
+                                name: "Samuel Turner",
                             occupation: "Senior Architect at X Studio",
                             industry: "Architecture",
                             skill: "AutoCAD",
