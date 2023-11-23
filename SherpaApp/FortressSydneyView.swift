@@ -50,58 +50,69 @@ struct FortressSydneyView: View {
                         listPeople(
                             profilePhoto: "BobLe",
                             name: "Marell Bito",
-                            occupation: "Serious Game Researcher at UTS",
-                            industry: "IT",
-                            skill: "Unity",
-                            skill1: "C#",
-                            skill2: "Research",
-                            description: "“Marell’s my name, and gaming is my game!”"
+                            occupation: "Financial Analyst at ABC Bank",
+                            industry: "Finance",
+                            skill: "Risk Manag",
+                            skill1: "BA",
+                            skill2: "Communication",
+                            description: "“Dedicated to providing accurate financial insights to support business decisions.”"
                         )
                         listPeople(
                             profilePhoto: "EvaM",
-                            name: "Angela Coggin",
-                            occupation: "Funding Officer at USYD",
-                            industry: "Education",
-                            skill: "Funding",
-                            skill1: "Proj Mgt",
-                            skill2: "PR",
-                            description: "“Eager to discuss potential collaborations and funding opportunities”"
+                            name: "Eva Miler",
+                            occupation: "Researcher at Medical Center",
+                            industry: "Health",
+                            skill: "DA",
+                            skill1: "Medi-R",
+                            skill2: "Empathy",
+                            description: "“Committed to advancing medical knowledge through research and analysis.”"
                         )
+                        NavigationLink(destination: JohnProfileView()) {
                             listPeople(
                                 profilePhoto: "John",
-                                name: "Sophia Nguyen",
-                                occupation: "Interior Designer at Elle Decor",
-                                industry: "Design",
-                                skill: "Color Theory",
-                                skill1: "Furniture Design",
-                                skill2: "Space Planning",
-                                description: "“Curating spaces that tell stories.”"
+                                name: "John Smith",
+                                occupation: "Interaction Designer at Apple",
+                                industry: "IT",
+                                skill: "Swift",
+                                skill1: "Figma",
+                                skill2: "PM",
+                                description: "“The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!”"
                             )
-
+                        }.foregroundStyle(.black)
                         listPeople(
                             profilePhoto: "MaryP",
-                            name: "Samuel Turner",
-                            occupation: "Senior Architect at X Studio",
-                            industry: "Architecture",
-                            skill: "AutoCAD",
-                            skill1: "3D Modeling",
-                            skill2: "Sustainable Design",
-                            description: "“Building dreams into structures. My drafting board is a landscape of blueprints”"
+                            name: "Mary Pops",
+                            occupation: "Product Manager at Sherpa",
+                            industry: "IT",
+                            skill: "UI",
+                            skill1: "UX",
+                            skill2: "Research",
+                            description: "“Taking a break from my project, I’m here for the networking and of course, a latte.”"
                         )
                     }
                     else{
-
+                        NavigationLink(destination: JohnProfileView()) {
                             listPeople(
-                                profilePhoto: "BobLe",
-                                name: "Marell Bito",
-                                occupation: "Serious Game Researcher at UTS",
+                                profilePhoto: "John",
+                                name: "John Smith",
+                                occupation: "Interaction Designer at Apple",
                                 industry: "IT",
-                                skill: "Unity",
-                                skill1: "C#",
-                                skill2: "Research",
-                                description: "“Marell’s my name, and gaming is my game!”"
+                                skill: "Swift",
+                                skill1: "Figma",
+                                skill2: "PM",
+                                description: "“The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!”"
                             )
-
+                        }.foregroundStyle(.black)
+                        listPeople(
+                            profilePhoto: "MaryP",
+                            name: "Mary Pops",
+                            occupation: "Product Manager at Sherpa",
+                            industry: "IT",
+                            skill: "UI",
+                            skill1: "UX",
+                            skill2: "Research",
+                            description: "“Taking a break from my project, I’m here for the networking and of course, a latte.”"
+                        )
                     }
                     Rectangle()
                         .frame(width:.infinity,height: 300)
