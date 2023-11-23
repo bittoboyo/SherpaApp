@@ -70,8 +70,7 @@ struct PeopleView: View {
                                 skill2: "PM",
                                 description: "“The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!”"
                             )
-                        }
-                        .foregroundStyle(.black)
+                        }.foregroundStyle(.black)
                         listPeople(
                             profilePhoto: "MaryP",
                             name: "Mary Pops",
@@ -154,7 +153,6 @@ func listPeople(profilePhoto: String,
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .frame(width: 80, height: 20)
-                        .padding(.horizontal,5)
                         .background(.blue)
                         .cornerRadius(5)
                 }
