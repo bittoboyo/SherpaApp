@@ -24,15 +24,15 @@ struct SunnyProfileView: View {
                     .offset(x: 160, y: 55)
                     
                     //Profile picture
-                    Image("AlverR")
+                    Image("Sunny")
                         .resizable()
                         .scaledToFit()
-                        .frame(height: 125)
+                        .frame(maxWidth: 125, minHeight: 125)
                         .clipShape(Circle())
                     
                     //Name and industry
                     HStack{
-                        Text("Alver Remolar")
+                        Text("Sunny Wong")
                             .font(.title)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.black)
@@ -46,27 +46,27 @@ struct SunnyProfileView: View {
                     }
                     
                     //Job position and company
-                    Text("Prompt Engineer at Sherpa")
+                    Text("UX/UI Designer at Sherpa")
                         .font(.title2)
                         .foregroundColor(.black)
                     
                     //Skills
                     HStack{
-                        Text("ChatGPT")
+                        Text("Figma")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
                             .background(Color(red:0.9,green:0.9,blue:0.9))
                             .cornerRadius(5)
                         
-                        Text("Midjourney")
+                        Text("User Flow")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
                             .background(Color(red:0.9,green:0.9,blue:0.9))
                             .cornerRadius(5)
                         
-                        Text("Lang Model")
+                        Text("Proj Mgt")
                             .font(.headline)
                             .foregroundColor(.black)
                             .frame(width: 100, height: 25)
@@ -103,7 +103,7 @@ struct SunnyProfileView: View {
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                             .padding(.horizontal,10)
                         
-                        Text("Passionate in exploring the endless possibilities of AI. Let's meet at Abercrombie Hotel! 🚀")
+                        Text("Believe in making impact with design. Interested in the crossover of serious game and cultural sector. 🎮")
                         //                        .frame(width: 180, height: 50)
                             .font(.system(.body))
                         //                    .foregroundColor(.black)
@@ -122,22 +122,45 @@ struct SunnyProfileView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                         
                         HStack{
-                            Image(systemName: "apple.logo")
+                            Image("Alpaca")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width:50,height: 50)
                             
                             VStack{
-                                Text("Interaction Designer")
+                                Text("UX/UI Designer")
                                     .font(.system(.caption))
                                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                 
-                                Text("Apple")
+                                Text("Sherpa")
                                     .font(.system(.caption))
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                 
-                                Text("1 year 8 months")
+                                Text("October 2023 - Present")
+                                    .font(.system(.caption))
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                            }
+                        }
+                        .padding(.bottom, 10)
+                        
+                        HStack{
+                            Image("Powerhouse")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width:50,height: 50)
+                            
+                            VStack{
+                                Text("Digital Product Designer")
+                                    .font(.system(.caption))
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                                Text("Powerhouse Museum")
+                                    .font(.system(.caption))
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                                Text("6 months")
                                     .font(.system(.caption))
                                     .frame(maxWidth: .infinity, alignment: .leading)
                             }
@@ -145,6 +168,8 @@ struct SunnyProfileView: View {
                     }
                     .padding(.horizontal, 30)
                     .padding(.vertical, 5)
+                    
+                    
                     Divider()
                     //Education
                     VStack{
@@ -170,7 +195,7 @@ struct SunnyProfileView: View {
                                     .font(.system(.caption))
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                 
-                                Text("2020-2022")
+                                Text("2023-2024")
                                     .font(.system(.caption))
                                     .frame(maxWidth: .infinity, alignment: .leading)
                             }
@@ -181,7 +206,7 @@ struct SunnyProfileView: View {
                     Divider()
                     //Check LinkedIn Profile Button
                     Button{
-                        openURL(URL(string: "https://au.linkedin.com")!)
+                        openURL(URL(string: "https://au.linkedin.com/in/sunny-yu-ching-wong")!)
                     }label: {
                         HStack{
                             Text("Check LinkedIn Profile")
