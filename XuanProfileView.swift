@@ -46,7 +46,7 @@ struct XuanProfileView: View {
                     }
                     
                     //Job position and company
-                    Text("Interaction Designer at Apple")
+                    Text("UI/UX Designer")
                         .font(.title2)
                         .foregroundColor(.black)
                     
@@ -181,7 +181,7 @@ struct XuanProfileView: View {
                     Divider()
                     //Check LinkedIn Profile Button
                     Button{
-                        openURL(URL(string: "https://au.linkedin.com")!)
+                        openURL(URL(string: "https://www.linkedin.com/in/yaxuan-zhang-085917296/")!)
                     }label: {
                         HStack{
                             Text("Check LinkedIn Profile")
