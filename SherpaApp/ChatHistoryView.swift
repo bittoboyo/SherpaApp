@@ -36,7 +36,7 @@ struct ChatHistoryView: View {
                         industry: "IT"
                     )
                 }
-                NavigationLink(destination: ChatUIView()){
+                NavigationLink(destination: MarellChatUIView()){
                     chatHistory(
                         profilePhoto: "Marell",
                         name: "Marell Bito",
