@@ -97,16 +97,17 @@ struct ProfilePic: View {
                 
                 HStack {
                     
-                    Image("John")
+                    Image("Sunny")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 48.0, height: 50)
+                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                     
                     
                     VStack(alignment: .leading) {
-                        Text("John Smith")
+                        Text("Sunny Wong")
                             .font(.headline)
-                        Text("Interaction Designer at Apple")
+                        Text("UX/UI Designer at Sherpa")
                             .font(.subheadline)
                     }
                     Spacer()

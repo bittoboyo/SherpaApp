@@ -16,7 +16,7 @@ struct PeopleView: View {
                     HStack{
                         Image(systemName: "figure.walk")
                             .font(.body)
-                        Text("7 mins walk")
+                        Text("10 mins walk")
                             .font(.body)
                             .frame(maxWidth: 360, alignment: .leading)
                     }
@@ -68,16 +68,16 @@ struct PeopleView: View {
                             skill2: "Empathy",
                             description: "“Committed to advancing medical knowledge through research and analysis.”"
                         )
-                        NavigationLink(destination: JohnProfileView()) {
+                        NavigationLink(destination: SunnyProfileView()) {
                             listPeople(
-                                profilePhoto: "John",
-                                name: "John Smith",
-                                occupation: "Interaction Designer at Apple",
+                                profilePhoto: "Sunny",
+                                name: "Sunny Wong",
+                                occupation: "UX/UI Designer at Sherpa",
                                 industry: "IT",
-                                skill: "Swift",
-                                skill1: "Figma",
-                                skill2: "PM",
-                                description: "“The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!”"
+                                skill: "Figma",
+                                skill1: "User Flow",
+                                skill2: "Proj Mgt",
+                                description: "“Believe in making impact with design. Interested in the crossover of serious game and cultural sector. 🎮”"
                             )
                         }.foregroundStyle(.black)
                         listPeople(
@@ -92,16 +92,16 @@ struct PeopleView: View {
                         )
                     }
                     else{
-                        NavigationLink(destination: JohnProfileView()) {
+                        NavigationLink(destination: SunnyProfileView()) {
                             listPeople(
-                                profilePhoto: "John",
-                                name: "John Smith",
-                                occupation: "Interaction Designer at Apple",
+                                profilePhoto: "Sunny",
+                                name: "Sunny Wong",
+                                occupation: "UX/UI Designer at Sherpa",
                                 industry: "IT",
-                                skill: "Swift",
-                                skill1: "Figma",
-                                skill2: "PM",
-                                description: "“The one thing I can’t live without is my cat Apollo, especially when I’m working on Figma and other tasks!”"
+                                skill: "Figma",
+                                skill1: "User Flow",
+                                skill2: "Proj Mgt",
+                                description: "“Believe in making impact with design. Interested in the crossover of serious game and cultural sector. 🎮”"
                             )
                         }.foregroundStyle(.black)
                         listPeople(
